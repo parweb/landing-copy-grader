@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Landing Copy Grader — Does your hero copy look AI-generated?</title>
+<meta name="description" content="Free, offline, single-file grader: paste your landing page headline, subhead and CTA and get a 0–100 score for how generic / AI-generated your copy sounds — plus concrete fixes. No signup, no LLM, runs entirely in your browser.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500;9..144,600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0d0b08;--ink:#f4efe6;--muted:#9a917f;--line:#2a271f;--accent:#e8622c;--accent2:#d9b44a;--good:#7fb069;--paper:#141109;--serif:"Fraunces",Georgia,serif;--mono:"Space Mono",monospace}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:var(--serif);font-weight:300;line-height:1.5;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+.mono{font-family:var(--mono);text-transform:uppercase;letter-spacing:.2em;font-size:.68rem}
+.wrap{max-width:760px;margin:0 auto;padding:0 24px}
+header{padding:70px 0 26px;position:relative}
+header .glow{position:absolute;top:-10%;right:-25%;width:60vw;height:55vw;border-radius:50%;background:radial-gradient(circle,rgba(232,98,44,.18),transparent 60%);filter:blur(55px);pointer-events:none}
+.home{color:var(--muted);text-decoration:none;font-family:var(--mono);text-transform:uppercase;letter-spacing:.15em;font-size:.66rem}
+.home:hover{color:var(--accent2)}
+h1{font-size:clamp(2.1rem,6vw,3.4rem);line-height:1.02;font-weight:500;letter-spacing:-.02em;margin:24px 0 0}
+h1 em{font-style:italic;color:var(--accent2)}
+.lede{color:var(--muted);font-size:1.08rem;max-width:52ch;margin-top:18px}
+.form{margin-top:34px;border:1px solid var(--line);border-radius:14px;padding:28px 26px;background:linear-gradient(160deg,var(--paper),var(--bg))}
+label{display:block;font-family:var(--mono);text-transform:uppercase;letter-spacing:.12em;font-size:.62rem;color:var(--accent);margin:0 0 8px}
+.field{margin-bottom:20px}
+input,textarea{width:100%;background:#0a0906;border:1px solid var(--line);border-radius:8px;color:var(--ink);font-family:var(--serif);font-size:1.05rem;padding:13px 15px;resize:vertical}
+input:focus,textarea:focus{outline:none;border-color:var(--accent)}
+.grade{width:100%;margin-top:6px;background:var(--accent);color:var(--bg);border:none;cursor:pointer;padding:16px;border-radius:100px;font-family:var(--mono);text-transform:uppercase;letter-spacing:.1em;font-size:.74rem;font-weight:700;transition:transform .3s,background .3s}
+.grade:hover{transform:translateY(-2px);background:var(--accent2)}
+.hint{color:var(--muted);font-size:.86rem;margin-top:2px}
+#result{margin-top:34px;display:none}
+.scorecard{border:1px solid var(--line);border-radius:14px;padding:34px 28px;text-align:center;background:linear-gradient(160deg,var(--paper),var(--bg))}
+.big{font-size:clamp(4rem,16vw,7rem);font-weight:500;letter-spacing:-.03em;line-height:1}
+.big small{font-size:1.6rem;color:var(--muted)}
+.verdict{font-style:italic;font-size:1.5rem;margin-top:6px}
+.bars{margin:28px 0 8px;text-align:left;display:flex;flex-direction:column;gap:14px}
+.bar .top{display:flex;justify-content:space-between;font-size:.92rem;margin-bottom:6px}
+.bar .top b{font-weight:500}
+.bar .top span{font-family:var(--mono);font-size:.72rem;color:var(--muted)}
+.track{height:7px;background:#0a0906;border:1px solid var(--line);border-radius:100px;overflow:hidden}
+.fill{height:100%;border-radius:100px;background:var(--accent2);transition:width .8s cubic-bezier(.2,.8,.2,1)}
+.fixes{text-align:left;margin-top:28px;border-top:1px solid var(--line);padding-top:24px}
+.fixes h3{font-family:var(--mono);text-transform:uppercase;letter-spacing:.14em;font-size:.66rem;color:var(--accent);margin-bottom:16px}
+.fixes li{list-style:none;color:var(--ink);padding:10px 0 10px 26px;position:relative;border-bottom:1px solid var(--line);font-size:1rem}
+.fixes li:last-child{border-bottom:none}
+.fixes li::before{content:"→";position:absolute;left:0;color:var(--accent2)}
+.fixes li b{color:var(--accent2);font-weight:400;font-family:var(--mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.06em}
+.share{margin-top:18px;background:none;border:1px solid var(--ink);color:var(--ink);cursor:pointer;padding:10px 20px;border-radius:100px;font-family:var(--mono);font-size:.66rem;letter-spacing:.1em;text-transform:uppercase;transition:background .3s,color .3s}
+.share:hover{background:var(--ink);color:var(--bg)}
+.share.done{background:var(--accent2);border-color:var(--accent2);color:var(--bg)}
+.hosted{margin:26px 0 80px;border:1px solid var(--line);border-radius:14px;padding:24px 26px;background:linear-gradient(160deg,var(--paper),var(--bg));color:var(--muted);font-size:.95rem}
+.hosted a{color:var(--accent2);text-decoration:none;border-bottom:1px solid var(--line)}
+.hosted a:hover{border-color:var(--accent2)}
+footer{border-top:1px solid var(--line);padding:34px 0;color:var(--muted);display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-family:var(--mono);text-transform:uppercase;letter-spacing:.12em;font-size:.64rem}
+footer a{color:var(--muted);text-decoration:none}
+footer a:hover{color:var(--accent2)}
+@media(max-width:560px){h1{font-size:1.9rem}}
+</style>
+</head>
+<body>
+<header class="wrap">
+  <div class="glow"></div>
+  <span class="home">Landing Copy Grader · deterministic · offline</span>
+  <h1>Does your hero copy <em>look AI-generated?</em></h1>
+  <p class="lede">Paste your landing page headline, subhead and button. Get a 0–100 score for how generic your copy sounds — and the exact lines to fix. Runs in your browser, no signup, no LLM, nothing stored.</p>
+
+  <div class="form">
+    <div class="field">
+      <label for="h">Headline</label>
+      <input id="h" placeholder="e.g. We build things worth remembering." maxlength="160">
+    </div>
+    <div class="field">
+      <label for="s">Subheadline</label>
+      <textarea id="s" rows="2" placeholder="e.g. A design & engineering studio crafting interfaces that refuse to blend in." maxlength="320"></textarea>
+    </div>
+    <div class="field">
+      <label for="c">CTA button text</label>
+      <input id="c" placeholder="e.g. Start a project" maxlength="60">
+    </div>
+    <button class="grade" id="go">● Grade my landing page</button>
+    <p class="hint">100% client-side · deterministic · your text never leaves the page.</p>
+  </div>
+
+  <div id="result">
+    <div class="scorecard">
+      <div class="mono" style="color:var(--accent)">Your score</div>
+      <div class="big"><span id="score">0</span><small>/100</small></div>
+      <div class="verdict" id="verdict"></div>
+      <div class="bars" id="bars"></div>
+      <button class="share" id="share">Copy my result</button>
+    </div>
+
+    <div class="fixes">
+      <h3>What to fix</h3>
+      <ul id="fixes"></ul>
+    </div>
+  </div>
+
+  <div class="hosted">
+    Single-file &amp; open source (MIT). Run it offline, or use the
+    <a href="https://1h-money-store.vercel.app/grader?utm_source=github&utm_medium=repo" target="_blank" rel="noopener">hosted version</a>.
+    Built by the <a href="https://1h-money-store.vercel.app/?utm_source=github&utm_medium=repo" target="_blank" rel="noopener">1h Money Store</a>.
+  </div>
+</header>
+
+<footer class="wrap">
+  <span>MIT-licensed · no telemetry</span>
+  <a href="https://github.com/parweb/landing-copy-grader" target="_blank" rel="noopener">Source on GitHub →</a>
+</footer>
+
+<script>
+// ---- Deterministic scoring heuristics (no LLM, no network) ----
+var HYPE=['revolutionize','revolutionary','unlock','unleash','seamless','seamlessly','game-changer','game changer','game-changing','cutting-edge','cutting edge','next-level','next level','supercharge','effortless','effortlessly','elevate','empower','empowering','transform','transformative','best-in-class','world-class','state-of-the-art','robust','synergy','disruptive','innovative','innovation','leverage','harness','turbocharge','skyrocket','10x','paradigm','frictionless','bleeding-edge','holistic'];
+var FILLER=['solutions','solution','platform','powerful','amazing','great','awesome','stuff','things','simply','just','very','really','stunning','beautiful','ultimate','premium','quality','value','experience','journey','ecosystem','suite','toolkit','all-in-one','one-stop'];
+var WEAKCTA=['submit','learn more','click here','read more','get started','sign up','signup','continue','next','go','here','more info','discover','explore'];
+function words(t){return (t.trim().match(/[A-Za-z0-9'-]+/g)||[]);}
+function countHits(t,list){var l=' '+t.toLowerCase()+' ';var n=0;list.forEach(function(w){var re=new RegExp('(^|[^a-z])'+w.replace(/[-\/\\^$*+?.()|[\]{}]/g,'\\$&')+'([^a-z]|$)','g');var m=l.match(re);if(m)n+=m.length;});return n;}
+function hasNumber(t){return /\d/.test(t);}
+function emojiCount(t){return (t.match(/[\u{1F000}-\u{1FAFF}\u{2600}-\u{27BF}\u{2190}-\u{21FF}\u{2B00}-\u{2BFF}]/gu)||[]).length;}
+
+function grade(h,s,c){
+  var all=(h+' '+s+' '+c);
+  var dims=[];
+  // 1. Anti-hype (25)
+  var hype=countHits(all,HYPE), excl=(all.match(/!/g)||[]).length, emo=emojiCount(all);
+  var caps=(words(h+' '+s).filter(function(w){return w.length>2 && w===w.toUpperCase() && /[A-Z]/.test(w);})).length;
+  var antiPen=hype*7+excl*5+emo*4+caps*4;
+  dims.push({key:'Anti-hype',max:25,score:Math.max(0,25-antiPen),notes:{hype:hype,excl:excl,emo:emo,caps:caps}});
+  // 2. Specificity (25) — a concrete number / proof
+  var spec=hasNumber(all)?25:8; if(/%|\bx\b|×|hours?|days?|minutes?|\bno\b|zero/i.test(all)&&spec<25)spec=Math.min(25,spec+9);
+  dims.push({key:'Specificity',max:25,score:spec,notes:{number:hasNumber(all)}});
+  // 3. Clarity (25) — low filler, plain
+  var filler=countHits(all,FILLER);
+  var clar=Math.max(0,25-filler*6);
+  dims.push({key:'Clarity',max:25,score:clar,notes:{filler:filler}});
+  // 4. Headline shape (13)
+  var hw=words(h).length; var hlScore=13;
+  if(hw===0)hlScore=0; else if(hw>12)hlScore=5; else if(hw>10)hlScore=9; else if(hw<3)hlScore=7;
+  dims.push({key:'Headline shape',max:13,score:hlScore,notes:{words:hw}});
+  // 5. CTA (12)
+  var ctaW=c.trim().toLowerCase(); var weak=WEAKCTA.indexOf(ctaW)>=0 || ctaW==='';
+  var ctaScore= c.trim()===''?0 : (weak?4:12);
+  dims.push({key:'CTA',max:12,score:ctaScore,notes:{weak:weak,empty:c.trim()===''}});
+
+  var total=dims.reduce(function(a,d){return a+d.score;},0);
+  total=Math.round(total);
+  var verdict = total>=80?'Reads human & sharp.' : total>=60?'Decent, but softening in places.' : total>=40?'Somewhat generic.' : 'This reads AI-generated.';
+  // Fixes
+  var fixes=[];
+  if(hype>0)fixes.push({t:'Cut the hype words',d:'Found '+hype+' ("revolutionize/unlock/seamless/leverage"…). Replace each with a plain, concrete verb. Hype words are the #1 "AI-generated" tell.'});
+  if(!hasNumber(all))fixes.push({t:'Add one number',d:'No concrete figure anywhere. A single number (a %, a count, a timeframe) instantly raises believability.'});
+  if(filler>0)fixes.push({t:'Delete filler',d:'Found '+filler+' vague words ("solutions/platform/powerful"…). They add length, not meaning.'});
+  if(hw>12)fixes.push({t:'Shorten the headline',d:hw+' words is too long. Aim for ≤10 — cut to the single idea a stranger would repeat.'});
+  if(hw>0&&hw<3)fixes.push({t:'Say more in the headline',d:'A '+hw+'-word headline is usually too vague to carry the offer. Add the outcome.'});
+  if(weak&&c.trim()!=='')fixes.push({t:'Rewrite the CTA',d:'"'+c.trim()+'" is generic. Use an action + outcome ("Start a project", "Grade my page"), not "Submit/Learn more".'});
+  if(excl>0)fixes.push({t:'Remove exclamation marks',d:'Found '+excl+'. Confident copy doesn’t shout.'});
+  if(emo>0)fixes.push({t:'Drop the emoji from the copy',d:'Emoji in a hero headline reads as templated/generated.'});
+  if(caps>0)fixes.push({t:'Lose the ALL-CAPS words',d:'Full-caps words in the hero read as shouty, not designed.'});
+  if(fixes.length===0)fixes.push({t:'Nicely done',d:'No obvious tells. Next lever is rhythm and a point of view — three hero variants and pick by voice.'});
+  return {total:total,verdict:verdict,dims:dims,fixes:fixes.slice(0,6)};
+}
+
+var R=null;
+function run(){
+  var h=document.getElementById('h').value, s=document.getElementById('s').value, c=document.getElementById('c').value;
+  if(!(h+s+c).trim()){document.getElementById('h').focus();return;}
+  R=grade(h,s,c);
+  document.getElementById('result').style.display='block';
+  document.getElementById('verdict').textContent=R.verdict;
+  var col=R.total>=80?'var(--good)':R.total>=50?'var(--accent2)':'var(--accent)';
+  document.getElementById('score').textContent='0';
+  var el=document.getElementById('score'), tgt=R.total, st=performance.now();
+  (function anim(t){var p=Math.min(1,(t-st)/700);el.textContent=Math.round(tgt*p);el.style.color=col;if(p<1)requestAnimationFrame(anim);})(st);
+  var bars=R.dims.map(function(d){var pct=Math.round(d.score/d.max*100);return '<div class="bar"><div class="top"><b>'+d.key+'</b><span>'+d.score+'/'+d.max+'</span></div><div class="track"><div class="fill" style="width:0"></div></div></div>';}).join('');
+  document.getElementById('bars').innerHTML=bars;
+  setTimeout(function(){document.querySelectorAll('#bars .fill').forEach(function(f,i){f.style.width=Math.round(R.dims[i].score/R.dims[i].max*100)+'%';});},60);
+  document.getElementById('fixes').innerHTML=R.fixes.map(function(f){return '<li><b>'+f.t+'</b> — '+f.d+'</li>';}).join('');
+  document.getElementById('result').scrollIntoView({behavior:'smooth'});
+}
+document.getElementById('go').addEventListener('click',run);
+document.getElementById('share').addEventListener('click',function(){
+  if(!R)return; var b=this;
+  var url='https://1h-money-store.vercel.app/grader?utm_source=grader-share&utm_medium=viral&utm_campaign=result';
+  var txt=R.total>=60
+    ? 'My landing-page hero scored '+R.total+'/100 for reading human (not AI-generated) on this free grader — deterministic, no LLM, runs in your browser. Check yours: '+url
+    : 'I ran my landing-page hero through a deterministic "does this sound AI-written?" grader — no LLM, 100% in-browser. Scored '+R.total+'/100 and it flagged exactly what to tighten. Check yours: '+url;
+  navigator.clipboard.writeText(txt).then(function(){b.textContent='Copied ✓';b.classList.add('done');setTimeout(function(){b.textContent='Copy my result';b.classList.remove('done');},1800);});
+});
+</script>
+</body>
+</html>
