@@ -60,6 +60,20 @@ Reproducible — run them yourself:
 
 The first triggers: cut the hype words, add a number, delete filler, rewrite the CTA.
 
+## Dataset: 239 real landing pages, scored
+
+[`data/landing-pages-scores.csv`](data/landing-pages-scores.csv) — the hero copy of 239 well-known landing pages (YC companies, dev tools, SaaS, AI products), extracted on 2026-07-24 and scored with this exact grader. Live table with the scored text per row: [leaderboard](https://1h-money-store.vercel.app/leaderboard).
+
+Reproduce any row yourself:
+
+```
+node scripts/score-page.js https://stripe.com
+```
+
+**Extraction method** (canonical, documented in [`scripts/score-page.js`](scripts/score-page.js)): plain GET (no JS execution), first `<h1>` (og:title/`<title>` fallback, repeated-phrase collapse), first `<h2>`/`<p>` after it (20–400 chars, cookie boilerplate skipped), first `<a>`/`<button>` after it (2–40 chars, skip-links/consent/login UI skipped). Pages rendering <200 chars of text without JS were rejected.
+
+**Honest caveats:** the grader sees only what a no-JS fetch returns — the extracted hero can differ from what a human sees on a JS-rendered page. Excluded from the dataset: pages served in a non-English locale, pages behind bot protection (403/503), pages intercepted by the crawl network's filter, and 4 pages where extraction produced a non-hero fragment (airbnb.com, dev.to, checkout.com, substack.com). Scores judge the *extracted hero copy* against fixed heuristics — they are not a judgment of the product or the full page.
+
 ## Use it
 
 - **Hosted:** <https://1h-money-store.vercel.app/grader>
