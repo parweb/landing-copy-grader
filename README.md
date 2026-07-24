@@ -2,7 +2,7 @@
 
 **Does your landing page hero copy read as AI-generated?** Paste your headline, subheadline and CTA, get a **0–100 score** plus the exact lines to fix.
 
-No LLM. No backend. No signup. One HTML file, ~19 KB, runs entirely in your browser — open it from `file://` on a plane if you want. Your text never leaves the page.
+No LLM. No backend. No signup. One HTML file, ~15 KB, runs entirely in your browser — open it from `file://` on a plane if you want. Your text never leaves the page.
 
 **[▶ Try the hosted version](https://1h-money-store.vercel.app/grader?utm_source=github&utm_medium=repo)** · or download [`grader.html`](grader.html) and double-click it.
 
