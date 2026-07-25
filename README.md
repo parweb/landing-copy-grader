@@ -1,5 +1,7 @@
 # Landing Copy Grader
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21543774.svg)](https://doi.org/10.5281/zenodo.21543774)
+
 **Does your landing page hero copy read as AI-generated?** Paste your headline, subheadline and CTA, get a **0–100 score** plus the exact lines to fix.
 
 No LLM. No backend. No signup. One HTML file, ~15 KB, runs entirely in your browser — open it from `file://` on a plane if you want. Your text never leaves the page.
@@ -119,6 +121,13 @@ Young and small, stated plainly so you can judge it: **first published 2026-07-2
 What is likely to change: the word lists (they are opinionated, and PRs adding or removing terms are the most useful contribution), the corpus (it can be re-extracted; the pages move), and language coverage (English only today).
 
 Issues and pull requests are welcome — including "this rule is wrong, here's a counter-example." A counter-example against a deterministic scorer is a reproducible bug report, which is most of the reason for building it this way.
+
+## Cite this
+
+Both objects are archived on Zenodo with a DOI, so the rubric and the corpus can be cited independently.
+
+- **Software** (this repo, tag `v1.0.0`) — [10.5281/zenodo.21543774](https://doi.org/10.5281/zenodo.21543774)
+- **Dataset** (the 239 scored pages, with the full method and the 303→239 exclusions) — [10.5281/zenodo.21543620](https://doi.org/10.5281/zenodo.21543620)
 
 ## License
 
