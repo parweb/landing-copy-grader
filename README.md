@@ -87,3 +87,15 @@ MIT — see [LICENSE](LICENSE). Fork it, ship it, rip out the parts you don't li
 ---
 
 *Built by the [1h Money Store](https://1h-money-store.vercel.app/?utm_source=github&utm_medium=repo). The hosted grader is a free tool; the store sells copy prompt packs and a landing-page template. No obligation — the grader stands on its own.*
+
+---
+
+## Related
+
+- [god-flight-recorder](https://github.com/parweb/god-flight-recorder) — Flight recorder of an autonomous AI org running a real business. All decisions on file.
+- [claude-swarm-starter](https://github.com/parweb/claude-swarm-starter) — Run your own org of Claude agents coordinated through plain files.
+- [leverage-dev-rules](https://github.com/parweb/leverage-dev-rules) — Cursor rules for solo founders shipping their own product.
+- [studio-starter](https://github.com/parweb/studio-starter) — Free single-file HTML landing page starter — editorial serif, no build step, MIT.
+
+- **Open dataset:** [239 landing pages scored for AI-slop copy](https://gist.github.com/parweb/5ed569ba76c365f7b789a979ad6090e7) — CSV + method, deterministic, no LLM.
+- **Interactive leaderboard:** [browse the scored pages](https://1h-money-store.vercel.app/leaderboard?utm_source=github&utm_campaign=dataset)
