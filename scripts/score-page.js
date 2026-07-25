@@ -1,8 +1,11 @@
 #!/usr/bin/env node
 // score-page.js — standalone Node port of the Landing Copy Grader.
 //
-// The grade() function below is byte-identical to the one in grader.html
-// (and to the live version at https://1h-money-store.vercel.app/grader).
+// The grade() function below scores identically to grader.html, to the live grader at
+// https://1h-money-store.vercel.app/grader, and to grade_landing_copy in the MCP server
+// parweb/mcp-ai-slop-checker — verified on all 239 pages of the published corpus, 0
+// disagreements. It is not byte-identical: it carries both rule versions (see RULES),
+// because the corpus was scored before three rules were tightened on 2026-07-25.
 // Same input → same score, always. No LLM, no API key, no dependencies.
 //
 // Usage:
@@ -28,21 +31,72 @@
 
 'use strict';
 
-/* ---------- scoring (identical to grader.html) ---------- */
+/* ---------- scoring (identical to grader.html and to the live grader) ---------- */
 var HYPE=['revolutionize','revolutionary','unlock','unleash','seamless','seamlessly','game-changer','game changer','game-changing','cutting-edge','cutting edge','next-level','next level','supercharge','effortless','effortlessly','elevate','empower','empowering','transform','transformative','best-in-class','world-class','state-of-the-art','robust','synergy','disruptive','innovative','innovation','leverage','harness','turbocharge','skyrocket','10x','paradigm','frictionless','bleeding-edge','holistic'];
 var FILLER=['solutions','solution','platform','powerful','amazing','great','awesome','stuff','things','simply','just','very','really','stunning','beautiful','ultimate','premium','quality','value','experience','journey','ecosystem','suite','toolkit','all-in-one','one-stop'];
 var WEAKCTA=['submit','learn more','click here','read more','get started','sign up','signup','continue','next','go','here','more info','discover','explore'];
 function words(t){return (t.trim().match(/[A-Za-z0-9'-]+/g)||[]);}
 function countHits(t,list){var l=' '+t.toLowerCase()+' ';var n=0;list.forEach(function(w){var re=new RegExp('(^|[^a-z])'+w.replace(/[-\/\\^$*+?.()|[\]{}]/g,'\\$&')+'([^a-z]|$)','g');var m=l.match(re);if(m)n+=m.length;});return n;}
-function hasNumber(t){return /\d/.test(t);}
-function emojiCount(t){return (t.match(/[\u{1F000}-\u{1FAFF}\u{2600}-\u{27BF}\u{2190}-\u{21FF}\u{2B00}-\u{2BFF}]/gu)||[]).length;}
+// Two rules were tightened on 2026-07-25 after an audit of the 239-page corpus.
+// Both versions are kept, because data/landing-pages-scores.csv was scored with v1
+// and its `method` column says so — a dataset must stay scorable by the rule that
+// produced it. `grade()` defaults to v2, which is what the live grader runs.
+var RULES = {
+  // v1 — frozen. Every digit counted as a claim.
+  'static-fetch-regex-v1': {
+    hasNumber: function(t){ return /\d/.test(t); },
+    emojiCount: function(t){ return (t.match(/[\u{1F000}-\u{1FAFF}\u{2600}-\u{27BF}\u{2190}-\u{21FF}\u{2B00}-\u{2BFF}]/gu)||[]).length; },
+    capsCount: function(ws){ return ws.filter(function(w){ return w.length>2 && w===w.toUpperCase() && /[A-Z]/.test(w); }).length; }
+  },
+  // v2 — current. A digit is only a claim if it isn't part of a name, a version, a
+  // year or a list index: 11 of the 44 pages v1 credited with a number were artefacts
+  // (Auth0, Mem0, n8n.io, "Framer 3.0", B2C, "(c) 2026", tailwindcss quoting pt-4).
+  // And a button arrow is not an emoji: "Get started ->" was losing 4 points for a
+  // typographic sign that a large share of landing pages use.
+  'static-fetch-regex-v2': {
+    hasNumber: function(t){
+      var s=String(t)
+        .replace(/\u00a9\s*\d{4}/g,' ')
+        .replace(/\b(?:19|20)\d{2}\b/g,' ')
+        .replace(/\bv?\d+(?:\.\d+)+\b(?!\s*%)/g,' ')
+        .replace(/[A-Za-z]+-?\d+[A-Za-z0-9-]*/g,' ')
+        .replace(/^\s*\d+[.)]\s+/gm,' ');
+      return /\d/.test(s);
+    },
+    emojiCount: function(t){
+      var m = t.match(/[\u{1F000}-\u{1FAFF}\u{2600}-\u{27BF}\u{2B00}-\u{2BFF}]/gu) || [];
+      return m.filter(function(c){
+        var p = c.codePointAt(0);
+        if (p >= 0x2b00 && p <= 0x2b8f) return false;   // supplemental arrows
+        if (p >= 0x2713 && p <= 0x2714) return false;   // check marks
+        if (p >= 0x2794 && p <= 0x27bf) return false;   // dingbat arrows
+        return true;
+      }).length;
+    },
+    // An acronym is not a shout. On technical pages SQL/MCP/TUI/CLI/PATH gave 5 false
+    // positives out of 5: telling a Postgres tool off for "SQL in capitals" discredits
+    // the very tool that sells rigour. Rule: 6 letters or more is a shout; below that,
+    // only words people actually do shout in a headline.
+    capsCount: function(ws){
+      var SHOUT = ['FREE','NEW','BEST','NOW','SALE','TODAY','FAST','EASY','ONLY','SAVE','JOIN','WIN','TOP','HOT','BIG','MUST','LIMITED'];
+      return ws.filter(function(w){
+        if (!(w.length>2 && w===w.toUpperCase() && /[A-Z]/.test(w))) return false;
+        return w.length>=6 || SHOUT.indexOf(w)!==-1;
+      }).length;
+    }
+  }
+};
+var METHOD = 'static-fetch-regex-v2';
 
-function grade(h,s,c){
+function grade(h,s,c,method){
+  var R = RULES[method || METHOD];
+  if (!R) throw new Error('unknown scoring method: ' + method);
+  var hasNumber = R.hasNumber, emojiCount = R.emojiCount, capsCount = R.capsCount;
   var all=(h+' '+s+' '+c);
   var dims=[];
   // 1. Anti-hype (25)
   var hype=countHits(all,HYPE), excl=(all.match(/!/g)||[]).length, emo=emojiCount(all);
-  var caps=(words(h+' '+s).filter(function(w){return w.length>2 && w===w.toUpperCase() && /[A-Z]/.test(w);})).length;
+  var caps=capsCount(words(h+' '+s));
   var antiPen=hype*7+excl*5+emo*4+caps*4;
   dims.push({key:'Anti-hype',max:25,score:Math.max(0,25-antiPen),notes:{hype:hype,excl:excl,emo:emo,caps:caps}});
   // 2. Specificity (25) — a concrete number / proof

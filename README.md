@@ -48,10 +48,12 @@ Five weighted dimensions sum to 100. Every rule is a plain function over the thr
 **1. Anti-hype — 25 pts.** Starts at 25, subtracts penalties for the top "generated" tells:
 - hype words (`revolutionize`, `unlock`, `seamless`, `leverage`, `supercharge`, `cutting-edge`, `game-changer`, … ~40 terms) — **−7 each**
 - exclamation marks — **−5 each**
-- emoji in the copy — **−4 each**
-- ALL-CAPS words — **−4 each**
+- emoji — **−4 each**. Arrows (`→`, `➜`) and check marks (`✓`) are **not** counted: a button arrow is typography, not an emoji.
+- shouting — **−4 each**. A word in caps counts only if it is 6 letters or longer, or one of 17 words people genuinely shout in a headline (`FREE`, `NEW`, `SALE`, …). **`SQL`, `MCP`, `CLI`, `API` are acronyms, not shouting.**
 
-**2. Specificity — 25 pts.** Any digit anywhere → 25. No number → 8, with a partial rescue (+9) if there's a proof-shaped word (`%`, `x`, `hours`, `days`, `minutes`, `no`, `zero`). One concrete figure is the single fastest believability lift.
+**2. Specificity — 25 pts.** A concrete number → 25. No number → 8, with a partial rescue (+9) if there's a proof-shaped word (`%`, `x`, `hours`, `days`, `minutes`, `no`, `zero`). One concrete figure is the single fastest believability lift.
+
+A digit only counts as a claim if it isn't part of a **name, a version, a year or a list index** — `Auth0`, `Mem0`, `n8n.io`, `Framer 3.0`, `B2C`, `© 2026` and a page quoting `pt-4` are not making a quantified claim.
 
 **3. Clarity — 25 pts.** Starts at 25, **−6 per filler word** (`solutions`, `platform`, `powerful`, `amazing`, `experience`, `journey`, `ecosystem`, `all-in-one`, … ~27 terms). These add length, not meaning.
 
@@ -59,7 +61,13 @@ Five weighted dimensions sum to 100. Every rule is a plain function over the thr
 
 **5. CTA — 12 pts.** A specific action → 12. A generic CTA (`submit`, `learn more`, `get started`, `sign up`, `click here`, … ~14 terms) → 4. Empty → 0.
 
-Word matching is whole-word and case-insensitive (regex-bounded, so `learn` inside `learned` doesn't false-positive). Then a verdict band: **≥80** reads human & sharp · **60–79** decent · **40–59** somewhat generic · **<40** reads AI-generated. You get up to six targeted fixes, each naming the exact count it found.
+Word matching is whole-word and case-insensitive (regex-bounded, so `learn` inside `learned` doesn't false-positive).
+
+Then a verdict band: **≥80** reads human & sharp · **60–79** decent · **40–59** somewhat generic · **<40** reads AI-generated. You get up to six targeted fixes, each naming the exact count it found.
+
+> **The three exclusions above are corrections, dated 2026-07-25**, and each came from a measured false positive rather than a preference: 11 of the 44 pages credited with a number were name/version/year artefacts, arrows were costing pages 4 points for a button glyph, and every ALL-CAPS flag raised on a technical page was an acronym. **Scoring a Postgres tool down for "SQL in capitals" discredits the tool that is selling rigour.**
+>
+> The dataset below **predates all three** and is scored with the previous rules. Its `method` column records which (`static-fetch-regex-v1`), and `verify-dataset.js` scores each row with the rule its own method names — re-scoring an archived row with today's rule would not be a verification, it would be a different dataset.
 
 ## Worked examples
 
@@ -83,7 +91,7 @@ node scripts/verify-dataset.js     # re-scores all 239 rows, exits 1 on any disa
 node scripts/score-page.js https://stripe.com    # or re-extract a page live
 ```
 
-What the corpus says, recomputed by that script:
+What the corpus says, recomputed by that script — **these are the figures of the deposited dataset** (`static-fetch-regex-v1`), which is the archived, citable object:
 
 | tell | pages | % |
 |---|---:|---:|
@@ -128,6 +136,8 @@ Both objects are archived on Zenodo with a DOI, so the rubric and the corpus can
 
 - **Software** (this repo, tag `v1.0.0`) — [10.5281/zenodo.21543774](https://doi.org/10.5281/zenodo.21543774)
 - **Dataset** (the 239 scored pages, with the full method and the 303→239 exclusions) — [10.5281/zenodo.21543620](https://doi.org/10.5281/zenodo.21543620)
+
+They are separate records because they are separate things: the scorer gets corrected, the archived corpus does not. GitHub's *Cite this repository* button reads [`CITATION.cff`](CITATION.cff) and hands you BibTeX or APA directly.
 
 ## License
 

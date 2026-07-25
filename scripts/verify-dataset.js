@@ -38,7 +38,10 @@ head.forEach(function (h, i) { col[h] = i; });
 
 var bad = [], scores = [], tally = {};
 csv.forEach(function (r) {
-  var got = grade(r[col.headline], r[col.subhead], r[col.cta]);
+  // Each row is scored with the rule its own `method` column names. The corpus was
+  // extracted and scored under v1; two rules were tightened afterwards. Re-scoring a
+  // v1 row with today's rule would not be a verification, it would be a new dataset.
+  var got = grade(r[col.headline], r[col.subhead], r[col.cta], r[col.method]);
   var want = { score: Number(r[col.score]), flags: (r[col.flags] || '').split(' ').filter(Boolean) };
   if (got.total !== want.score) bad.push(r[col.domain] + ': score ' + got.total + ' != ' + want.score);
   if (got.flags.slice().sort().join(' ') !== want.flags.slice().sort().join(' '))
