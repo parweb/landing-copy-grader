@@ -16,7 +16,7 @@ node scripts/score-page.js https://stripe.com
 # score   : 61/100 — Decent, but softening in places.  [filler,weakcta,nonum,longhl]
 ```
 
-The repo also ships the **dataset that came out of it**: the hero copy of [239 real landing pages](data/landing-pages-scores.csv), extracted and scored with this exact grader. The headline finding — **195 of the 239 pages (82%) contain no number at all in their hero.** Median score 79. `node scripts/verify-dataset.js` re-scores all 239 rows offline and fails if a single one disagrees.
+The repo also ships the **dataset that came out of it**: the hero copy of [239 real landing pages](data/landing-pages-scores.csv), extracted and scored with the grader in this repo, under the rules of that date. The headline finding — **195 of the 239 pages (82%) contain no number at all in their hero.** Median score 79. `node scripts/verify-dataset.js` re-scores all 239 rows offline and fails if a single one disagrees.
 
 ![Screenshot of the grader scoring a hero 100/100 with per-dimension bars](docs/screenshot.png)
 
@@ -82,7 +82,7 @@ The first triggers: cut the hype words, add a number, delete filler, rewrite the
 
 ## Dataset: 239 real landing pages, scored
 
-[`data/landing-pages-scores.csv`](data/landing-pages-scores.csv) — the hero copy of 239 well-known landing pages (YC companies, dev tools, SaaS, AI products), extracted on 2026-07-24 and scored with this exact grader. Live table: [leaderboard](https://1h-money-store.vercel.app/leaderboard).
+[`data/landing-pages-scores.csv`](data/landing-pages-scores.csv) — the hero copy of 239 well-known landing pages (YC companies, dev tools, SaaS, AI products), extracted on 2026-07-24 and scored with `static-fetch-regex-v1`, the rule set of that date. Live table: [leaderboard](https://1h-money-store.vercel.app/leaderboard).
 
 One row per page, with the **extracted text included** — `url, domain, score, flags, headline, subhead, cta, hero_chars, extracted_at, method` — so every score is reproducible offline, without refetching anyone's site:
 
@@ -90,6 +90,8 @@ One row per page, with the **extracted text included** — `url, domain, score, 
 node scripts/verify-dataset.js     # re-scores all 239 rows, exits 1 on any disagreement
 node scripts/score-page.js https://stripe.com    # or re-extract a page live
 ```
+
+⚠️ **Reproducing a row means reproducing it under `static-fetch-regex-v1`** — `grade(headline, subhead, cta, 'static-fetch-regex-v1')`, which is what `verify-dataset.js` does automatically by reading each row's `method` column. **The browser tool applies today's rules and takes no method argument, so pasting a row into it can legitimately give a different score.** That is the rule change below doing its job, not a contradiction — but you should know which of the two you are running.
 
 What the corpus says, recomputed by that script — **these are the figures of the deposited dataset** (`static-fetch-regex-v1`), which is the archived, citable object:
 
