@@ -4,7 +4,17 @@
 
 No LLM. No backend. No signup. One HTML file, ~15 KB, runs entirely in your browser — open it from `file://` on a plane if you want. Your text never leaves the page.
 
-**[▶ Try the hosted version](https://1h-money-store.vercel.app/grader?utm_source=github&utm_medium=repo)** · or download [`grader.html`](grader.html) and double-click it.
+**[▶ Try it in the browser](https://parweb.github.io/landing-copy-grader/)** · [hosted version](https://1h-money-store.vercel.app/grader?utm_source=github&utm_medium=repo) · or download [`grader.html`](grader.html) and double-click it.
+
+```bash
+node scripts/score-page.js https://stripe.com
+# headline: Financial infrastructure to grow your revenue. …
+# subhead : Flexible solutions for every business model.
+# cta     : Get started
+# score   : 61/100 — Decent, but softening in places.  [filler,weakcta,nonum,longhl]
+```
+
+The repo also ships the **dataset that came out of it**: the hero copy of [239 real landing pages](data/landing-pages-scores.csv), extracted and scored with this exact grader. The headline finding — **195 of the 239 pages (82%) contain no number at all in their hero.** Median score 79. `node scripts/verify-dataset.js` re-scores all 239 rows offline and fails if a single one disagrees.
 
 ![Screenshot of the grader scoring a hero 100/100 with per-dimension bars](docs/screenshot.png)
 
@@ -62,13 +72,34 @@ The first triggers: cut the hype words, add a number, delete filler, rewrite the
 
 ## Dataset: 239 real landing pages, scored
 
-[`data/landing-pages-scores.csv`](data/landing-pages-scores.csv) — the hero copy of 239 well-known landing pages (YC companies, dev tools, SaaS, AI products), extracted on 2026-07-24 and scored with this exact grader. Live table with the scored text per row: [leaderboard](https://1h-money-store.vercel.app/leaderboard).
+[`data/landing-pages-scores.csv`](data/landing-pages-scores.csv) — the hero copy of 239 well-known landing pages (YC companies, dev tools, SaaS, AI products), extracted on 2026-07-24 and scored with this exact grader. Live table: [leaderboard](https://1h-money-store.vercel.app/leaderboard).
 
-Reproduce any row yourself:
+One row per page, with the **extracted text included** — `url, domain, score, flags, headline, subhead, cta, hero_chars, extracted_at, method` — so every score is reproducible offline, without refetching anyone's site:
 
 ```
-node scripts/score-page.js https://stripe.com
+node scripts/verify-dataset.js     # re-scores all 239 rows, exits 1 on any disagreement
+node scripts/score-page.js https://stripe.com    # or re-extract a page live
 ```
+
+What the corpus says, recomputed by that script:
+
+| tell | pages | % |
+|---|---:|---:|
+| `nonum` — no digit anywhere in the hero | **195** | **82%** |
+| `filler` — ≥1 filler word | 82 | 34% |
+| `weakcta` — CTA is a stock phrase | 35 | 15% |
+| `caps` — ALL-CAPS word | 33 | 14% |
+| `hype` — ≥1 hype word | 16 | 7% |
+| `shorthl` — headline under 3 words | 13 | 5% |
+| `longhl` — headline over 12 words | 9 | 4% |
+| `emoji` | 7 | 3% |
+| `excl` — exclamation mark | 7 | 3% |
+
+Scores: min 41 · median **79** · mean 80.1 · 19 at 100 · 31 below 70.
+
+**The most common tell is not the em-dash and not "delve" — it's the absence of a number.** Four landing pages in five make a claim with no quantity attached to it.
+
+> **Correction, 2026-07-25.** An earlier version of this CSV stored only the first three flags per row. Rows with four or more tells silently lost one, so five of the nine frequencies above were published low — `nonum` in particular read 194 / 81% instead of 195 / 82%. The CSV now carries the full flag list and the source text, and `verify-dataset.js` recomputes the table from it, so the published summary can no longer drift from the data. **If you saw 194 / 81% from us anywhere, 195 / 82% is the correct figure.**
 
 **Extraction method** (canonical, documented in [`scripts/score-page.js`](scripts/score-page.js)): plain GET (no JS execution), first `<h1>` (og:title/`<title>` fallback, repeated-phrase collapse), first `<h2>`/`<p>` after it (20–400 chars, cookie boilerplate skipped), first `<a>`/`<button>` after it (2–40 chars, skip-links/consent/login UI skipped). Pages rendering <200 chars of text without JS were rejected.
 
@@ -76,9 +107,18 @@ node scripts/score-page.js https://stripe.com
 
 ## Use it
 
-- **Hosted:** <https://1h-money-store.vercel.app/grader>
+- **In the browser:** <https://parweb.github.io/landing-copy-grader/> (served from this repo) or <https://1h-money-store.vercel.app/grader>
+- **From an MCP client** (Claude Code, Claude Desktop, Cursor): the same engines are an MCP server — [`parweb/mcp-ai-slop-checker`](https://github.com/parweb/mcp-ai-slop-checker), listed in the official [MCP Registry](https://registry.modelcontextprotocol.io).
 - **Local:** download [`grader.html`](grader.html) and open it — no build, no dependencies, no network calls. The only external requests are two optional Google Fonts; block them and it falls back to system serif/mono.
 - **Embed / fork:** it's one self-contained file. Swap the word lists or weights at the top of the `<script>` to fit your own voice guidelines.
+
+## Project status
+
+Young and small, stated plainly so you can judge it: **first published 2026-07-24.** The scoring engine and the extraction method are stable — they are the two things this repo is *for*, and `verify-dataset.js` pins both against the 239-page corpus, so a change that moves a score breaks the build rather than the data.
+
+What is likely to change: the word lists (they are opinionated, and PRs adding or removing terms are the most useful contribution), the corpus (it can be re-extracted; the pages move), and language coverage (English only today).
+
+Issues and pull requests are welcome — including "this rule is wrong, here's a counter-example." A counter-example against a deterministic scorer is a reproducible bug report, which is most of the reason for building it this way.
 
 ## License
 
@@ -92,10 +132,15 @@ MIT — see [LICENSE](LICENSE). Fork it, ship it, rip out the parts you don't li
 
 ## Related
 
+Same engine, other surfaces:
+
+- [parweb/mcp-ai-slop-checker](https://github.com/parweb/mcp-ai-slop-checker) — the same scoring as an MCP server, in the official MCP Registry.
+- [parweb/sounds-ai](https://github.com/parweb/sounds-ai) — the prose checker (em-dash density, `delve`, formulaic scaffolds) as a single HTML file.
+- [Interactive leaderboard](https://1h-money-store.vercel.app/leaderboard?utm_source=github&utm_campaign=dataset) — all 239 pages with their hero text.
+
+Other repos by the same org:
+
 - [god-flight-recorder](https://github.com/parweb/god-flight-recorder) — Flight recorder of an autonomous AI org running a real business. All decisions on file.
 - [claude-swarm-starter](https://github.com/parweb/claude-swarm-starter) — Run your own org of Claude agents coordinated through plain files.
 - [leverage-dev-rules](https://github.com/parweb/leverage-dev-rules) — Cursor rules for solo founders shipping their own product.
 - [studio-starter](https://github.com/parweb/studio-starter) — Free single-file HTML landing page starter — editorial serif, no build step, MIT.
-
-- **Open dataset:** [239 landing pages scored for AI-slop copy](https://gist.github.com/parweb/5ed569ba76c365f7b789a979ad6090e7) — CSV + method, deterministic, no LLM.
-- **Interactive leaderboard:** [browse the scored pages](https://1h-money-store.vercel.app/leaderboard?utm_source=github&utm_campaign=dataset)

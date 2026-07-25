@@ -1,240 +1,240 @@
-url,domain,score,top_flags,hero_chars,extracted_at,method
-https://appsmith.com,appsmith.com,100,,179,2026-07-24,static-fetch-regex-v1
-https://auth0.com,auth0.com,100,,99,2026-07-24,static-fetch-regex-v1
-https://calendly.com,calendly.com,100,,128,2026-07-24,static-fetch-regex-v1
-https://dashlane.com,dashlane.com,100,,136,2026-07-24,static-fetch-regex-v1
-https://framer.com,framer.com,100,,106,2026-07-24,static-fetch-regex-v1
-https://gumroad.com,gumroad.com,100,,58,2026-07-24,static-fetch-regex-v1
-https://indiehackers.com,indiehackers.com,100,,232,2026-07-24,static-fetch-regex-v1
-https://instacart.com,instacart.com,100,,100,2026-07-24,static-fetch-regex-v1
-https://leadpages.com,leadpages.com,100,,450,2026-07-24,static-fetch-regex-v1
-https://lithic.com,lithic.com,100,,104,2026-07-24,static-fetch-regex-v1
-https://logrocket.com,logrocket.com,100,,101,2026-07-24,static-fetch-regex-v1
-https://mem0.ai,mem0.ai,100,,162,2026-07-24,static-fetch-regex-v1
-https://pipedream.com,pipedream.com,100,,114,2026-07-24,static-fetch-regex-v1
-https://pocketbase.io,pocketbase.io,100,,90,2026-07-24,static-fetch-regex-v1
-https://podia.com,podia.com,100,,190,2026-07-24,static-fetch-regex-v1
-https://producthunt.com,producthunt.com,100,,67,2026-07-24,static-fetch-regex-v1
-https://scale.com,scale.com,100,,117,2026-07-24,static-fetch-regex-v1
-https://trychroma.com,trychroma.com,100,,251,2026-07-24,static-fetch-regex-v1
-https://wise.com,wise.com,100,,155,2026-07-24,static-fetch-regex-v1
-https://lattice.com,lattice.com,94,filler,178,2026-07-24,static-fetch-regex-v1
-https://lemlist.com,lemlist.com,94,filler,120,2026-07-24,static-fetch-regex-v1
-https://n8n.io,n8n.io,94,filler,121,2026-07-24,static-fetch-regex-v1
-https://podium.com,podium.com,94,filler,205,2026-07-24,static-fetch-regex-v1
-https://strava.com,strava.com,94,shorthl,149,2026-07-24,static-fetch-regex-v1
-https://todoist.com,todoist.com,94,shorthl,126,2026-07-24,static-fetch-regex-v1
-https://windmill.dev,windmill.dev,94,filler,136,2026-07-24,static-fetch-regex-v1
-https://airtable.com,airtable.com,92,nonum,214,2026-07-24,static-fetch-regex-v1
-https://basecamp.com,basecamp.com,92,longhl,162,2026-07-24,static-fetch-regex-v1
-https://brex.com,brex.com,92,weakcta,123,2026-07-24,static-fetch-regex-v1
-https://clickup.com,clickup.com,92,nonum,85,2026-07-24,static-fetch-regex-v1
-https://copper.com,copper.com,92,nonum,112,2026-07-24,static-fetch-regex-v1
-https://datadoghq.com,datadoghq.com,92,caps,274,2026-07-24,static-fetch-regex-v1
-https://headspace.com,headspace.com,92,emoji,110,2026-07-24,static-fetch-regex-v1
-https://inngest.com,inngest.com,92,nonum,90,2026-07-24,static-fetch-regex-v1
-https://lyft.com,lyft.com,92,nonum,183,2026-07-24,static-fetch-regex-v1
-https://mailerlite.com,mailerlite.com,92,longhl,225,2026-07-24,static-fetch-regex-v1
-https://n26.com,n26.com,92,nonum,80,2026-07-24,static-fetch-regex-v1
-https://paddle.com,paddle.com,92,weakcta,188,2026-07-24,static-fetch-regex-v1
-https://stytch.com,stytch.com,92,caps,182,2026-07-24,static-fetch-regex-v1
-https://flodesk.com,flodesk.com,91,excl|caps,133,2026-07-24,static-fetch-regex-v1
-https://hey.com,hey.com,91,excl|caps,159,2026-07-24,static-fetch-regex-v1
-https://cloudflare.com,cloudflare.com,90,filler,205,2026-07-24,static-fetch-regex-v1
-https://ghost.org,ghost.org,90,filler|emoji,308,2026-07-24,static-fetch-regex-v1
-https://sproutsocial.com,sproutsocial.com,88,filler,223,2026-07-24,static-fetch-regex-v1
-https://squarespace.com,squarespace.com,88,nonum|emoji,78,2026-07-24,static-fetch-regex-v1
-https://coda.io,coda.io,86,filler|nonum,129,2026-07-24,static-fetch-regex-v1
-https://convex.dev,convex.dev,86,filler|nonum,201,2026-07-24,static-fetch-regex-v1
-https://instapage.com,instapage.com,86,filler|weakcta,290,2026-07-24,static-fetch-regex-v1
-https://harvey.ai,harvey.ai,85,hype|nonum,144,2026-07-24,static-fetch-regex-v1
-https://codesandbox.io,codesandbox.io,84,nonum|longhl,169,2026-07-24,static-fetch-regex-v1
-https://directus.io,directus.io,84,nonum|caps,157,2026-07-24,static-fetch-regex-v1
-https://kajabi.com,kajabi.com,84,filler,201,2026-07-24,static-fetch-regex-v1
-https://tailwindcss.com,tailwindcss.com,84,weakcta|caps,235,2026-07-24,static-fetch-regex-v1
-https://1password.com,1password.com,83,nonum,179,2026-07-24,static-fetch-regex-v1
-https://activepieces.com,activepieces.com,83,nonum,99,2026-07-24,static-fetch-regex-v1
-https://affirm.com,affirm.com,83,nonum|excl,101,2026-07-24,static-fetch-regex-v1
-https://amplitude.com,amplitude.com,83,nonum,150,2026-07-24,static-fetch-regex-v1
-https://assemblyai.com,assemblyai.com,83,nonum,185,2026-07-24,static-fetch-regex-v1
-https://benchling.com,benchling.com,83,nonum,350,2026-07-24,static-fetch-regex-v1
-https://budibase.com,budibase.com,83,nonum,192,2026-07-24,static-fetch-regex-v1
-https://buildkite.com,buildkite.com,83,nonum,116,2026-07-24,static-fetch-regex-v1
-https://cal.com,cal.com,83,nonum,211,2026-07-24,static-fetch-regex-v1
-https://cartesia.ai,cartesia.ai,83,nonum,116,2026-07-24,static-fetch-regex-v1
-https://chargebee.com,chargebee.com,83,nonum,167,2026-07-24,static-fetch-regex-v1
-https://circle.so,circle.so,83,nonum,81,2026-07-24,static-fetch-regex-v1
-https://circleci.com,circleci.com,83,nonum,98,2026-07-24,static-fetch-regex-v1
-https://claude.com,claude.com,83,nonum,81,2026-07-24,static-fetch-regex-v1
-https://clerk.com,clerk.com,83,nonum,236,2026-07-24,static-fetch-regex-v1
-https://clickhouse.com,clickhouse.com,83,nonum,119,2026-07-24,static-fetch-regex-v1
-https://cockroachlabs.com,cockroachlabs.com,83,nonum,253,2026-07-24,static-fetch-regex-v1
-https://cohere.com,cohere.com,83,nonum,80,2026-07-24,static-fetch-regex-v1
-https://databricks.com,databricks.com,83,nonum,115,2026-07-24,static-fetch-regex-v1
-https://deel.com,deel.com,83,nonum,95,2026-07-24,static-fetch-regex-v1
-https://devin.ai,devin.ai,83,nonum,63,2026-07-24,static-fetch-regex-v1
-https://elastic.co,elastic.co,83,nonum,86,2026-07-24,static-fetch-regex-v1
-https://evernote.com,evernote.com,83,nonum,133,2026-07-24,static-fetch-regex-v1
-https://fly.io,fly.io,83,nonum,122,2026-07-24,static-fetch-regex-v1
-https://getdbt.com,getdbt.com,83,nonum,251,2026-07-24,static-fetch-regex-v1
-https://grafana.com,grafana.com,83,nonum,132,2026-07-24,static-fetch-regex-v1
-https://grammarly.com,grammarly.com,83,nonum,177,2026-07-24,static-fetch-regex-v1
-https://intercom.com,intercom.com,83,nonum,246,2026-07-24,static-fetch-regex-v1
-https://jasper.ai,jasper.ai,83,nonum,171,2026-07-24,static-fetch-regex-v1
-https://langchain.com,langchain.com,83,nonum,138,2026-07-24,static-fetch-regex-v1
-https://launchdarkly.com,launchdarkly.com,83,nonum,169,2026-07-24,static-fetch-regex-v1
-https://mercury.com,mercury.com,83,nonum,168,2026-07-24,static-fetch-regex-v1
-https://miro.com,miro.com,83,nonum,127,2026-07-24,static-fetch-regex-v1
-https://mixpanel.com,mixpanel.com,83,nonum,141,2026-07-24,static-fetch-regex-v1
-https://monzo.com,monzo.com,83,nonum,96,2026-07-24,static-fetch-regex-v1
-https://ngrok.com,ngrok.com,83,nonum,151,2026-07-24,static-fetch-regex-v1
-https://notion.so,notion.so,83,nonum,133,2026-07-24,static-fetch-regex-v1
-https://opera.com,opera.com,83,nonum,59,2026-07-24,static-fetch-regex-v1
-https://pinecone.io,pinecone.io,83,nonum,101,2026-07-24,static-fetch-regex-v1
-https://planetscale.com,planetscale.com,83,nonum,288,2026-07-24,static-fetch-regex-v1
-https://plausible.io,plausible.io,83,nonum,107,2026-07-24,static-fetch-regex-v1
-https://posthog.com,posthog.com,83,nonum,141,2026-07-24,static-fetch-regex-v1
-https://proton.me,proton.me,83,nonum,125,2026-07-24,static-fetch-regex-v1
-https://qdrant.tech,qdrant.tech,83,nonum,210,2026-07-24,static-fetch-regex-v1
-https://redis.io,redis.io,83,nonum,57,2026-07-24,static-fetch-regex-v1
-https://render.com,render.com,83,nonum,140,2026-07-24,static-fetch-regex-v1
-https://retool.com,retool.com,83,nonum,71,2026-07-24,static-fetch-regex-v1
-https://shopify.com,shopify.com,83,nonum,61,2026-07-24,static-fetch-regex-v1
-https://stackblitz.com,stackblitz.com,83,nonum,224,2026-07-24,static-fetch-regex-v1
-https://strapi.io,strapi.io,83,nonum,85,2026-07-24,static-fetch-regex-v1
-https://supabase.com,supabase.com,83,nonum,194,2026-07-24,static-fetch-regex-v1
-https://superhuman.com,superhuman.com,83,nonum,98,2026-07-24,static-fetch-regex-v1
-https://surveymonkey.com,surveymonkey.com,83,nonum,198,2026-07-24,static-fetch-regex-v1
-https://tally.so,tally.so,83,nonum,151,2026-07-24,static-fetch-regex-v1
-https://teachable.com,teachable.com,83,nonum,213,2026-07-24,static-fetch-regex-v1
-https://telegram.org,telegram.org,83,nonum,64,2026-07-24,static-fetch-regex-v1
-https://trello.com,trello.com,83,nonum,153,2026-07-24,static-fetch-regex-v1
-https://turso.tech,turso.tech,83,nonum,135,2026-07-24,static-fetch-regex-v1
-https://uber.com,uber.com,83,nonum,66,2026-07-24,static-fetch-regex-v1
-https://vanta.com,vanta.com,83,nonum,88,2026-07-24,static-fetch-regex-v1
-https://vwo.com,vwo.com,83,nonum,240,2026-07-24,static-fetch-regex-v1
-https://warp.dev,warp.dev,83,nonum,224,2026-07-24,static-fetch-regex-v1
-https://zed.dev,zed.dev,83,nonum,121,2026-07-24,static-fetch-regex-v1
-https://synthesia.io,synthesia.io,82,filler,183,2026-07-24,static-fetch-regex-v1
-https://llamaindex.ai,llamaindex.ai,80,weakcta|nonum|caps,175,2026-07-24,static-fetch-regex-v1
-https://attio.com,attio.com,79,nonum|caps,133,2026-07-24,static-fetch-regex-v1
-https://clay.com,clay.com,79,nonum|caps,123,2026-07-24,static-fetch-regex-v1
-https://e2b.dev,e2b.dev,79,nonum|caps,76,2026-07-24,static-fetch-regex-v1
-https://exa.ai,exa.ai,79,nonum|caps,98,2026-07-24,static-fetch-regex-v1
-https://firecrawl.dev,firecrawl.dev,79,nonum|caps,152,2026-07-24,static-fetch-regex-v1
-https://front.com,front.com,79,nonum,227,2026-07-24,static-fetch-regex-v1
-https://glean.com,glean.com,79,nonum,141,2026-07-24,static-fetch-regex-v1
-https://linear.app,linear.app,79,nonum|emoji,148,2026-07-24,static-fetch-regex-v1
-https://pipedrive.com,pipedrive.com,79,nonum|caps,207,2026-07-24,static-fetch-regex-v1
-https://prisma.io,prisma.io,79,nonum|caps,173,2026-07-24,static-fetch-regex-v1
-https://sourcegraph.com,sourcegraph.com,79,nonum|emoji,162,2026-07-24,static-fetch-regex-v1
-https://storyblok.com,storyblok.com,79,nonum,171,2026-07-24,static-fetch-regex-v1
-https://tavily.com,tavily.com,79,nonum|caps,90,2026-07-24,static-fetch-regex-v1
-https://duckduckgo.com,duckduckgo.com,78,nonum|excl,107,2026-07-24,static-fetch-regex-v1
-https://workos.com,workos.com,78,filler|weakcta|nonum,179,2026-07-24,static-fetch-regex-v1
-https://adyen.com,adyen.com,77,filler|nonum,166,2026-07-24,static-fetch-regex-v1
-https://apollo.io,apollo.io,77,filler|nonum,96,2026-07-24,static-fetch-regex-v1
-https://appwrite.io,appwrite.io,77,filler|nonum,240,2026-07-24,static-fetch-regex-v1
-https://arc.net,arc.net,77,filler|nonum,144,2026-07-24,static-fetch-regex-v1
-https://brave.com,brave.com,77,filler|nonum,124,2026-07-24,static-fetch-regex-v1
-https://browserbase.com,browserbase.com,77,nonum|shorthl,65,2026-07-24,static-fetch-regex-v1
-https://buffer.com,buffer.com,77,nonum|shorthl,55,2026-07-24,static-fetch-regex-v1
-https://carrd.co,carrd.co,77,nonum|shorthl,101,2026-07-24,static-fetch-regex-v1
-https://confluent.io,confluent.io,77,filler|nonum,130,2026-07-24,static-fetch-regex-v1
-https://crewai.com,crewai.com,77,filler|nonum,203,2026-07-24,static-fetch-regex-v1
-https://fastly.com,fastly.com,77,filler|nonum,80,2026-07-24,static-fetch-regex-v1
-https://fullstory.com,fullstory.com,77,filler|nonum,171,2026-07-24,static-fetch-regex-v1
-https://github.com,github.com,77,filler|nonum,146,2026-07-24,static-fetch-regex-v1
-https://gitlab.com,gitlab.com,77,filler|nonum,91,2026-07-24,static-fetch-regex-v1
-https://hume.ai,hume.ai,77,filler|nonum,186,2026-07-24,static-fetch-regex-v1
-https://increase.com,increase.com,77,filler|nonum,161,2026-07-24,static-fetch-regex-v1
-https://knock.app,knock.app,77,filler|nonum,201,2026-07-24,static-fetch-regex-v1
-https://meridian-demo-flax.vercel.app,meridian-demo-flax.vercel.app,77,filler|nonum,161,2026-07-24,static-fetch-regex-v1
-https://monday.com,monday.com,77,filler|nonum,109,2026-07-24,static-fetch-regex-v1
-https://mural.co,mural.co,77,filler|nonum,237,2026-07-24,static-fetch-regex-v1
-https://netlify.com,netlify.com,77,filler|nonum,144,2026-07-24,static-fetch-regex-v1
-https://outreach.io,outreach.io,77,filler|nonum,128,2026-07-24,static-fetch-regex-v1
-https://postmarkapp.com,postmarkapp.com,77,filler|nonum,186,2026-07-24,static-fetch-regex-v1
-https://railway.com,railway.com,77,filler|nonum,83,2026-07-24,static-fetch-regex-v1
-https://raycast.com,raycast.com,77,filler|nonum,154,2026-07-24,static-fetch-regex-v1
-https://remix.run,remix.run,77,filler|nonum,193,2026-07-24,static-fetch-regex-v1
-https://rippling.com,rippling.com,77,filler|nonum,183,2026-07-24,static-fetch-regex-v1
-https://signal.org,signal.org,77,nonum|shorthl,48,2026-07-24,static-fetch-regex-v1
-https://statsig.com,statsig.com,77,filler|nonum,106,2026-07-24,static-fetch-regex-v1
-https://thinkific.com,thinkific.com,77,filler|nonum,276,2026-07-24,static-fetch-regex-v1
-https://trigger.dev,trigger.dev,77,filler|nonum,219,2026-07-24,static-fetch-regex-v1
-https://typeform.com,typeform.com,77,filler|nonum,127,2026-07-24,static-fetch-regex-v1
-https://unicornplatform.com,unicornplatform.com,77,filler|nonum,241,2026-07-24,static-fetch-regex-v1
-https://vercel.com,vercel.com,77,nonum|shorthl,138,2026-07-24,static-fetch-regex-v1
-https://zoom.us,zoom.us,77,filler|nonum,165,2026-07-24,static-fetch-regex-v1
-https://fivetran.com,fivetran.com,76,hype|nonum,148,2026-07-24,static-fetch-regex-v1
-https://loom.com,loom.com,76,hype|nonum,165,2026-07-24,static-fetch-regex-v1
-https://payloadcms.com,payloadcms.com,76,hype|nonum,163,2026-07-24,static-fetch-regex-v1
-https://plaid.com,plaid.com,76,hype|nonum,172,2026-07-24,static-fetch-regex-v1
-https://runwayml.com,runwayml.com,76,hype|nonum,291,2026-07-24,static-fetch-regex-v1
-https://smartlead.ai,smartlead.ai,76,hype|nonum,182,2026-07-24,static-fetch-regex-v1
-https://anthropic.com,anthropic.com,75,weakcta|nonum,211,2026-07-24,static-fetch-regex-v1
-https://astro.build,astro.build,75,weakcta|nonum,145,2026-07-24,static-fetch-regex-v1
-https://deno.com,deno.com,75,weakcta|nonum,160,2026-07-24,static-fetch-regex-v1
-https://docker.com,docker.com,75,weakcta|nonum,139,2026-07-24,static-fetch-regex-v1
-https://figma.com,figma.com,75,weakcta|nonum,117,2026-07-24,static-fetch-regex-v1
-https://gong.io,gong.io,75,nonum|longhl,285,2026-07-24,static-fetch-regex-v1
-https://keystatic.com,keystatic.com,75,nonum|caps,245,2026-07-24,static-fetch-regex-v1
-https://lemonsqueezy.com,lemonsqueezy.com,75,weakcta|nonum,175,2026-07-24,static-fetch-regex-v1
-https://modal.com,modal.com,75,weakcta|nonum,79,2026-07-24,static-fetch-regex-v1
-https://neon.tech,neon.tech,75,weakcta|nonum,150,2026-07-24,static-fetch-regex-v1
-https://nuxt.com,nuxt.com,75,weakcta|nonum,78,2026-07-24,static-fetch-regex-v1
-https://replicate.com,replicate.com,75,nonum|longhl,151,2026-07-24,static-fetch-regex-v1
-https://resend.com,resend.com,75,weakcta|nonum,139,2026-07-24,static-fetch-regex-v1
-https://sentry.io,sentry.io,75,weakcta|nonum,118,2026-07-24,static-fetch-regex-v1
-https://slack.com,slack.com,75,weakcta|nonum,123,2026-07-24,static-fetch-regex-v1
-https://webflow.com,webflow.com,75,weakcta|nonum,120,2026-07-24,static-fetch-regex-v1
-https://wix.com,wix.com,75,weakcta|nonum,151,2026-07-24,static-fetch-regex-v1
-https://xata.io,xata.io,75,weakcta|nonum,186,2026-07-24,static-fetch-regex-v1
-https://klaviyo.com,klaviyo.com,74,filler|weakcta|caps,96,2026-07-24,static-fetch-regex-v1
-https://novu.co,novu.co,73,filler|nonum|caps,237,2026-07-24,static-fetch-regex-v1
-https://usefathom.com,usefathom.com,73,filler|nonum|caps,348,2026-07-24,static-fetch-regex-v1
-https://weaviate.io,weaviate.io,73,filler|nonum|caps,127,2026-07-24,static-fetch-regex-v1
-https://writer.com,writer.com,73,nonum|shorthl|caps,49,2026-07-24,static-fetch-regex-v1
-https://bun.sh,bun.sh,72,filler|caps,370,2026-07-24,static-fetch-regex-v1
-https://vivaldi.com,vivaldi.com,72,filler|nonum|excl,131,2026-07-24,static-fetch-regex-v1
-https://algolia.com,algolia.com,71,filler|nonum,92,2026-07-24,static-fetch-regex-v1
-https://buttondown.com,buttondown.com,71,filler|nonum,127,2026-07-24,static-fetch-regex-v1
-https://hubspot.com,hubspot.com,71,filler|nonum,206,2026-07-24,static-fetch-regex-v1
-https://kit.com,kit.com,71,filler|nonum,247,2026-07-24,static-fetch-regex-v1
-https://sanity.io,sanity.io,71,filler|nonum,133,2026-07-24,static-fetch-regex-v1
-https://twilio.com,twilio.com,71,filler|nonum,224,2026-07-24,static-fetch-regex-v1
-https://umso.com,umso.com,71,filler|nonum,168,2026-07-24,static-fetch-regex-v1
-https://upstash.com,upstash.com,71,filler|nonum,76,2026-07-24,static-fetch-regex-v1
-https://unbounce.com,unbounce.com,70,hype|filler|nonum,299,2026-07-24,static-fetch-regex-v1
-https://checkr.com,checkr.com,69,filler|weakcta|nonum,105,2026-07-24,static-fetch-regex-v1
-https://courier.com,courier.com,69,filler|weakcta|nonum,272,2026-07-24,static-fetch-regex-v1
-https://instantly.ai,instantly.ai,69,weakcta|nonum|shorthl,59,2026-07-24,static-fetch-regex-v1
-https://nextjs.org,nextjs.org,69,filler|weakcta|nonum,186,2026-07-24,static-fetch-regex-v1
-https://svelte.dev,svelte.dev,69,weakcta|nonum|shorthl,58,2026-07-24,static-fetch-regex-v1
-https://ticktick.com,ticktick.com,69,filler|weakcta|nonum,74,2026-07-24,static-fetch-regex-v1
-https://baseten.co,baseten.co,68,hype|weakcta|nonum,168,2026-07-24,static-fetch-regex-v1
-https://hasura.io,hasura.io,68,hype|nonum|longhl,170,2026-07-24,static-fetch-regex-v1
-https://pulumi.com,pulumi.com,68,hype|weakcta|nonum,165,2026-07-24,static-fetch-regex-v1
-https://tailscale.com,tailscale.com,68,filler|nonum|caps,280,2026-07-24,static-fetch-regex-v1
-https://airbyte.com,airbyte.com,67,nonum|caps,203,2026-07-24,static-fetch-regex-v1
-https://contentful.com,contentful.com,66,hype|filler|nonum,204,2026-07-24,static-fetch-regex-v1
-https://apollographql.com,apollographql.com,65,filler|nonum|caps,187,2026-07-24,static-fetch-regex-v1
-https://hotjar.com,hotjar.com,65,filler|nonum,208,2026-07-24,static-fetch-regex-v1
-https://konghq.com,konghq.com,65,nonum|shorthl|caps,134,2026-07-24,static-fetch-regex-v1
-https://flexport.com,flexport.com,64,hype|filler|nonum,231,2026-07-24,static-fetch-regex-v1
-https://digitalocean.com,digitalocean.com,63,filler|weakcta|nonum,123,2026-07-24,static-fetch-regex-v1
-https://folk.app,folk.app,63,weakcta|nonum|caps,188,2026-07-24,static-fetch-regex-v1
-https://mongodb.com,mongodb.com,63,filler|weakcta|nonum,131,2026-07-24,static-fetch-regex-v1
-https://asana.com,asana.com,62,hype|filler|weakcta,82,2026-07-24,static-fetch-regex-v1
-https://marqeta.com,marqeta.com,62,hype|filler|nonum,381,2026-07-24,static-fetch-regex-v1
-https://segment.com,segment.com,62,filler|nonum|excl,238,2026-07-24,static-fetch-regex-v1
-https://sendgrid.com,sendgrid.com,62,filler|nonum|excl,236,2026-07-24,static-fetch-regex-v1
-https://close.com,close.com,61,filler|nonum|caps,310,2026-07-24,static-fetch-regex-v1
-https://jotform.com,jotform.com,61,filler|nonum|caps,75,2026-07-24,static-fetch-regex-v1
-https://stripe.com,stripe.com,61,filler|weakcta|nonum,230,2026-07-24,static-fetch-regex-v1
-https://unit.co,unit.co,58,hype|filler|nonum,191,2026-07-24,static-fetch-regex-v1
-https://optimizely.com,optimizely.com,57,filler|nonum|longhl,227,2026-07-24,static-fetch-regex-v1
-https://beehiiv.com,beehiiv.com,51,filler|nonum|caps,155,2026-07-24,static-fetch-regex-v1
-https://bitwarden.com,bitwarden.com,51,filler|nonum|caps,235,2026-07-24,static-fetch-regex-v1
-https://copy.ai,copy.ai,41,filler|nonum|shorthl,269,2026-07-24,static-fetch-regex-v1
+url,domain,score,flags,headline,subhead,cta,hero_chars,extracted_at,method
+https://appsmith.com,appsmith.com,100,,Save 100s of development hours and 1000s of development dollars,Build custom applications more quickly and securely with the leader in open-source low-code development.,Get a demo,179,2026-07-24,static-fetch-regex-v1
+https://auth0.com,auth0.com,100,,"Secure AI agents, humans, and whatever comes next",Auth0 for AI Agents Named,Start building for free,99,2026-07-24,static-fetch-regex-v1
+https://calendly.com,calendly.com,100,,Free Online Appointment Scheduling Software | Calendly,"Trusted by more than 100,000 of the world’s leading organizations",Product,128,2026-07-24,static-fetch-regex-v1
+https://dashlane.com,dashlane.com,100,,Prevent credential breaches,Proactively secure your enterprise against the #1 cause of breaches: risky employee passwords.,Contact Sales,136,2026-07-24,static-fetch-regex-v1
+https://framer.com,framer.com,100,,Framer is the AI website builder for standout sites,Everything we shipped,Framer 3.0 Everything we shipped,106,2026-07-24,static-fetch-regex-v1
+https://gumroad.com,gumroad.com,100,,Go from 0 to $1,Contribute or fork on GitHub,Start selling,58,2026-07-24,static-fetch-regex-v1
+https://indiehackers.com,indiehackers.com,100,,Indie Hackers: Work Together to Build Profitable Online Businesses,"Erik Aronesty found defunct domains with existing traffic and built what visitors needed. Thirty projects leader, he's bringing $15k/mo as a side hustle.",Starting Up,232,2026-07-24,static-fetch-regex-v1
+https://instacart.com,instacart.com,100,,Order groceries for delivery or pickup today,Stores to help you save,Sign up to get $0 delivery fee*,100,2026-07-24,static-fetch-regex-v1
+https://leadpages.com,leadpages.com,100,,AI Landing Page Builder: Get smarter visitor. with every visitor.,"Describe your campaign and our AI landing page builder turns it into a live, branded landing page in 60 seconds. From there the page optimizes itself: built-in A/B testing, Smart Traffic that routes each visitor to the variant most likely to convert for them, and heatmaps that show where visitors click. No traffic caps on any plan. Plans start at $ 99 $ 49 /mo.",landing page builder,450,2026-07-24,static-fetch-regex-v1
+https://lithic.com,lithic.com,100,,Programmable card issuing and money movement,"100+ high growth brands, billions in volume",Explore Sandbox,104,2026-07-24,static-fetch-regex-v1
+https://logrocket.com,logrocket.com,100,,AI session replay that catches issues before your users do,"Trusted by 3,000+ customers",Start for free,101,2026-07-24,static-fetch-regex-v1
+https://mem0.ai,mem0.ai,100,,AI memory that persists across sessions and agents,Drop-in memory infrastructure for AI agents and apps. Context that persists. Built for production.,Try Mem0 now,162,2026-07-24,static-fetch-regex-v1
+https://pipedream.com,pipedream.com,100,,What do you want to automate?,"Trusted by 1,000,000+ developers from startups to Fortune 500 companies",Try for free,114,2026-07-24,static-fetch-regex-v1
+https://pocketbase.io,pocketbase.io,100,,PocketBase - Open Source backend in 1 file,Ready to use out of the box,Pocket Base v0.39.9,90,2026-07-24,static-fetch-regex-v1
+https://podia.com,podia.com,100,,Build an online business that still feels human,"A home for the courses you teach, the community you host, the emails you write, and the people you do it all for.",Start your free 30-day trial,190,2026-07-24,static-fetch-regex-v1
+https://producthunt.com,producthunt.com,100,,Top Products Launching Today,Yesterday's Top Products,1. Fedica 2.0,67,2026-07-24,static-fetch-regex-v1
+https://scale.com,scale.com,100,,Reliable AI for the world’s most important decisions,"Copyright © 2026 Scale AI, Inc. All rights reserved",Terms of Use,117,2026-07-24,static-fetch-regex-v1
+https://trychroma.com,trychroma.com,100,,Open-source search infrastructure for AI,"Fast, serverless, and scalable infrastructure supporting vector, full-text, regex, and metadata search. Built on object storage and trusted by millions of developers. Open-source Apache 2.0.",Start free on Cloud,251,2026-07-24,static-fetch-regex-v1
+https://wise.com,wise.com,100,,"Money for here, there and everywhere",160 countries and territories. 40 currencies. Get the account built to save you money round the world.,Open an account,155,2026-07-24,static-fetch-regex-v1
+https://lattice.com,lattice.com,94,filler,People + AI: Succeeding Together,"Join 5,000+ forward-thinking teams using Lattice’s HR and AI tools to manage people and performance — all on one trusted platform.",Request a demo,178,2026-07-24,static-fetch-regex-v1
+https://lemlist.com,lemlist.com,94,filler,The AI Outbound Platform for Relevant Outreach at Every Scale,14-day free trial. No credit card required.,Start for free,120,2026-07-24,static-fetch-regex-v1
+https://n8n.io,n8n.io,94,filler,n8n.io - AI workflow automation platform,Product overview Automate business processes without limits on your logic,n8n.io,121,2026-07-24,static-fetch-regex-v1
+https://podium.com,podium.com,94,filler,The #1 converting AI Employee for local businesses,Turn more conversations into revenue with a 24/7 AI Employee that manages the full customer journey from first inquiry to booking and beyond.,Watch a demo,205,2026-07-24,static-fetch-regex-v1
+https://strava.com,strava.com,94,shorthl,Community-Powered Motivation,Track your progress and cheer each other on. Join over 100 million active people on Strava for free.,Sign Up With Google,149,2026-07-24,static-fetch-regex-v1
+https://todoist.com,todoist.com,94,shorthl,"Clarity, finally.",Join 50+ million professionals who simplify work and life with the world’s #1 to-do list app.,Start for free,126,2026-07-24,static-fetch-regex-v1
+https://windmill.dev,windmill.dev,94,filler,Code-first orchestration platform for internal software,"Trusted by 4,000+ organizations, including 300+ EE customers at scale:",self-host,136,2026-07-24,static-fetch-regex-v1
+https://airtable.com,airtable.com,92,nonum,"All your teams, all their workflows—connected in one workspace","Build AI-powered workflows that unify data, maximize collaboration, and set your teams up for long-term success. No code required.",Get started for free,214,2026-07-24,static-fetch-regex-v1
+https://basecamp.com,basecamp.com,92,longhl,The refreshingly straightforward project management system that’s rock-solid and easy to use.,Tell me if this sounds about right.,Take a 3 minute tour of Basecamp,162,2026-07-24,static-fetch-regex-v1
+https://brex.com,brex.com,92,weakcta,Finance built for speed and control.,"Modern cards, banking, expenses, accounting, and more — in 120+ countries.",Get started,123,2026-07-24,static-fetch-regex-v1
+https://clickup.com,clickup.com,92,nonum,Software to replace all software,Free forever. No credit card.,Get started. It's FREE,85,2026-07-24,static-fetch-regex-v1
+https://copper.com,copper.com,92,nonum,"Be there for your clients, every step of the way .",No more switching tabs. Do it all in Copper .,Try Copper free,112,2026-07-24,static-fetch-regex-v1
+https://datadoghq.com,datadoghq.com,92,caps,AI-Powered Observability and Security,"Thank you to the thousands of engineers, developers, and security experts who joined us in New York City. Catch the keynote and session recordings on demand — and get the inside scoops on DASH 2027, back in NYC on June 15–17.",Free trial,274,2026-07-24,static-fetch-regex-v1
+https://headspace.com,headspace.com,92,emoji,Mental Health App for Meditation & Sleep - Headspace,40% off for a limited time →,40% off for a limited time →,110,2026-07-24,static-fetch-regex-v1
+https://inngest.com,inngest.com,92,nonum,Unbreakable Agents. Invisible Infra.,No workers. No queues. No refactoring.,Start Building,90,2026-07-24,static-fetch-regex-v1
+https://lyft.com,lyft.com,92,nonum,The world awaits,"No matter where you’re headed, we’ll help you get there. On-demand, scheduled ahead, late night, or morning commute. Plus, earn rewards on every ride.",Sign up to ride,183,2026-07-24,static-fetch-regex-v1
+https://mailerlite.com,mailerlite.com,92,longhl,Create email marketing automations landing pages signup forms websites your audience will love,Digital marketing tools to grow your audience faster and drive revenue smarter. Backed by 24/7 award-winning support.,Sign up free,225,2026-07-24,static-fetch-regex-v1
+https://n26.com,n26.com,92,nonum,The first bank you'll love,Bank for free — with no hidden fees,Open bank account,80,2026-07-24,static-fetch-regex-v1
+https://paddle.com,paddle.com,92,weakcta,Sell globally. Grow without the complexity.,"As the Merchant of Record for digital product businesses, Paddle manages payments, tax, compliance, and billing across 300+ markets.",Get started,188,2026-07-24,static-fetch-regex-v1
+https://stytch.com,stytch.com,92,caps,Scales from your first user to Fortune 100 customers,"Let your enterprise customers self-serve authentication configuration, SSO setup, SCIM, and organization settings.",Single sign on,182,2026-07-24,static-fetch-regex-v1
+https://flodesk.com,flodesk.com,91,excl caps,Email marketing that’s different by design,Flodesk Studio is here! Get 25% off your first year of Flodesk with code STUDIO25,STUDIO25,133,2026-07-24,static-fetch-regex-v1
+https://hey.com,hey.com,91,excl caps,We finally fixed your email + calendar!,"Gmail, Outlook, and Apple got complacent and took their eye off the ball. Then along came HEY.",Try HEY free for 30-days,159,2026-07-24,static-fetch-regex-v1
+https://cloudflare.com,cloudflare.com,90,filler,Everything we learned from powering 20% of the Internet—yours by default,"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure.",Start building for free,205,2026-07-24,static-fetch-regex-v1
+https://ghost.org,ghost.org,90,filler emoji,Turn your audience into a business .,"Ghost is a powerful app for professional publishers to create, share, and grow a business around their content. It comes with modern tools to build a website, publish content, send newsletters & offer paid subscriptions to members.",Try Ghost completely free for 14 days →,308,2026-07-24,static-fetch-regex-v1
+https://sproutsocial.com,sproutsocial.com,88,filler,Where social becomes business intelligence,A powerful platform for social intelligence that turns real-time signals into clear direction for every team—so you can move faster and make smarter decisions.,Try free for 30 days,223,2026-07-24,static-fetch-regex-v1
+https://squarespace.com,squarespace.com,88,nonum emoji,A website makes it real,Start for free. No credit card required.,Get Started →,78,2026-07-24,static-fetch-regex-v1
+https://coda.io,coda.io,86,filler nonum,Your all-in-one collaborative workspace.,Coda brings teams and tools together for a more organized work day.,Get started for free,129,2026-07-24,static-fetch-regex-v1
+https://convex.dev,convex.dev,86,filler nonum,"All gas, no breakages","The reactive backend platform that keeps up with you and your agents. Database, functions, workflow, sync, search, file storage, and more. All TypeScript, zero glue.",Read the docs,201,2026-07-24,static-fetch-regex-v1
+https://instapage.com,instapage.com,86,filler weakcta,#1 Landing Page Builder.,"Grow your business with an AI-powered platform that has everything you need to create websites and landing pages — A drag-and-drop builder, 250+ templates, forms, popups, A/B testing, personalization, and email marketing. No extra costs or tools needed.",Get started,290,2026-07-24,static-fetch-regex-v1
+https://harvey.ai,harvey.ai,85,hype nonum,Practice Made Perfect,Today’s top law firms and in-house legal teams trust Harvey to elevate their craft and navigate complexity.,Request a Demo,144,2026-07-24,static-fetch-regex-v1
+https://codesandbox.io,codesandbox.io,84,nonum longhl,S a n d b o x e s b u i l t f o r s c a l e,Programmatically spin up isolated sandboxes for instant code execution in your AI agents and code playgrounds.,Start for free,169,2026-07-24,static-fetch-regex-v1
+https://directus.io,directus.io,84,nonum caps,The backend for your whole team.,"Connect any database. Get instant APIs, a no-code interface, and a native MCP server for your headless CMS.",Get Started Free,157,2026-07-24,static-fetch-regex-v1
+https://kajabi.com,kajabi.com,84,filler,The all-in-one platform that turns what you know into what you earn,"From digital products to marketing tools, everything you need to build, sell, and grow your knowledge business",Get Started — Save 50%,201,2026-07-24,static-fetch-regex-v1
+https://tailwindcss.com,tailwindcss.com,84,weakcta caps,Rapidly build modern websites without ever leaving your HTML.,"A utility-first CSS framework packed with classes like flex , pt-4 , text-center and rotate-90 that can be composed to build any design, directly in your markup.",Get started,235,2026-07-24,static-fetch-regex-v1
+https://1password.com,1password.com,83,nonum,Secure access for every human and AI agent,"Visibility and control for humans and AI agents, built on the most trusted vault for identities, credentials, and secrets.",Talk to sales,179,2026-07-24,static-fetch-regex-v1
+https://activepieces.com,activepieces.com,83,nonum,Give AI to every team,From chat to automation across the apps your teams already use.,Talk to sales,99,2026-07-24,static-fetch-regex-v1
+https://affirm.com,affirm.com,83,nonum excl,Affirm | Pay over time with flexible payment plans and no fees,We're glad you're here!,Go to the page,101,2026-07-24,static-fetch-regex-v1
+https://amplitude.com,amplitude.com,83,nonum,See what users do. Improve what matters.,Detect friction. Launch experiments and AI-powered workflows. Measure impact and iterate fast.,Start for free,150,2026-07-24,static-fetch-regex-v1
+https://assemblyai.com,assemblyai.com,83,nonum,Voice AI infrastructure for builders,"Trusted by millions of developers, AssemblyAI delivers industry-leading pre-recorded and real-time speech-to-text and voice agent APIs.",Sign up free,185,2026-07-24,static-fetch-regex-v1
+https://benchling.com,benchling.com,83,nonum,AI for every scientist. Breakthroughs for all.,"The AI Scientist connects predictive models, structured data, and wet lab execution into a single loop. It designs experiments, routes lab automation or guides manual execution, captures results as structured data, and recommends the next step — so every experiment compounds on the last.",Request a demo,350,2026-07-24,static-fetch-regex-v1
+https://budibase.com,budibase.com,83,nonum,"Save weeks building agents, apps, and automations","Automate workflows, handle requests, build internal tools, and connect your business systems - with your own data, LLMs, and APIs.",Try it free,192,2026-07-24,static-fetch-regex-v1
+https://buildkite.com,buildkite.com,83,nonum,You deserve better CI,"Engineered for frontier scale, trusted by the teams setting the pace",Start an all-access trial,116,2026-07-24,static-fetch-regex-v1
+https://cal.com,cal.com,83,nonum,The better way to schedule your meetings,"A fully customizable scheduling software for individuals, businesses taking calls and developers building scheduling platforms where users meet users.",Sign up with Google,211,2026-07-24,static-fetch-regex-v1
+https://cartesia.ai,cartesia.ai,83,nonum,Architecting AI that learns and interacts like humans,"Frontier research, deployed in every conversation",Try Cartesia,116,2026-07-24,static-fetch-regex-v1
+https://chargebee.com,chargebee.com,83,nonum,"Every Pricing Model, One Billing System","Adopt new pricing models—tiered, usage-based, flat-fee, or any custom model, without outgrowing your billing system.",Get a Demo,167,2026-07-24,static-fetch-regex-v1
+https://circle.so,circle.so,83,nonum,Circle | A new era for digital businesses,A new era for digital businesses,Circle,81,2026-07-24,static-fetch-regex-v1
+https://circleci.com,circleci.com,83,nonum,Validate everything. Assume nothing.,Validate before you push. Spend less. Ship more.,Try for free,98,2026-07-24,static-fetch-regex-v1
+https://claude.com,claude.com,83,nonum,"Think fast, build faster","Brainstorm in chat, build in Cowork",Continue with Google,81,2026-07-24,static-fetch-regex-v1
+https://clerk.com,clerk.com,83,nonum,"More than authentication, Complete User Management","Need more than sign-in? Clerk gives you full stack auth and user management — so you can launch faster, scale easier, and stay focused on building your business.",Start building for free,236,2026-07-24,static-fetch-regex-v1
+https://clickhouse.com,clickhouse.com,83,nonum,The leading database for AI,Powering agentic systems with millisecond queries at petabyte scale.,Start free cloud trial,119,2026-07-24,static-fetch-regex-v1
+https://cockroachlabs.com,cockroachlabs.com,83,nonum,The system of record to power your business,"CockroachDB is a cloud-agnostic, PostgreSQL compatible database built for modern applications that is the inevitable choice delivering unmatched uptime, scale and compliance - anywhere in the world.",Start free,253,2026-07-24,static-fetch-regex-v1
+https://cohere.com,cohere.com,83,nonum,Own your AI,Your data. Your infrastructure. Cohere keeps it that way.,Contact us,80,2026-07-24,static-fetch-regex-v1
+https://databricks.com,databricks.com,83,nonum,The database your AI agents deserve,Lakebase is serverless Postgres for applications that scale,Explore the product,115,2026-07-24,static-fetch-regex-v1
+https://deel.com,deel.com,83,nonum,"Hire, manage, pay, & equip anyone, anywhere.",What would you like to do with Deel?,Hire anywhere,95,2026-07-24,static-fetch-regex-v1
+https://devin.ai,devin.ai,83,nonum,"Devin, the AI software engineer",Learn & work together,Try Devin,63,2026-07-24,static-fetch-regex-v1
+https://elastic.co,elastic.co,83,nonum,Better retrieval. Better answers.,Elasticsearch brings context to AI.,Start free trial,86,2026-07-24,static-fetch-regex-v1
+https://evernote.com,evernote.com,83,nonum,Your second brain,"Remember everything and tackle any project with your notes, tasks, and schedule all in one place.",Get Evernote free,133,2026-07-24,static-fetch-regex-v1
+https://fly.io,fly.io,83,nonum,Computers for agents,Sandboxes aren't enough. Give your agent a real computer and get back to building.,Start with Sprites,122,2026-07-24,static-fetch-regex-v1
+https://getdbt.com,getdbt.com,83,nonum,"The open standard for modern, AI-ready data transformation","dbt combines SQL-based development with real-time validation and stateful intelligence, so you can build, test, and deploy AI-ready data pipelines quickly and confidently.",Get started with dbt,251,2026-07-24,static-fetch-regex-v1
+https://grafana.com,grafana.com,83,nonum,Full-stack observability with actually useful AI,Grafana Cloud: C ost-efficient by design. Built on open standards.,Get started free,132,2026-07-24,static-fetch-regex-v1
+https://grammarly.com,grammarly.com,83,nonum,Think big. We’ll take care of the details.,"Work with an AI partner that helps turn your thoughts into writing that’s clear, credible, and impossible to ignore.",Sign up It’s free,177,2026-07-24,static-fetch-regex-v1
+https://intercom.com,intercom.com,83,nonum,The only helpdesk designed for the AI Agent era,"Intercom is the only helpdesk with a natively integrated AI Agent , Fin , meaning every customer conversation improves the next one, enabling perfect experiences that were never possible before.",Fin,246,2026-07-24,static-fetch-regex-v1
+https://jasper.ai,jasper.ai,83,nonum,Put AI agents to work for marketing,"Orchestrate intelligent agents to run end-to-end marketing workflows—delivering speed, control, and measurable impact.",Start Free Trial,171,2026-07-24,static-fetch-regex-v1
+https://langchain.com,langchain.com,83,nonum,Powering the Agent Development Lifecycle,"Make experimentation repeatable, iterate faster, and gain momentum with LangSmith.",Start building,138,2026-07-24,static-fetch-regex-v1
+https://launchdarkly.com,launchdarkly.com,83,nonum,Move at AI speed. Stay in control.,"The runtime control layer for AI development, de-risking releases, and enabling systems that heal and optimize themselves.",Book a demo,169,2026-07-24,static-fetch-regex-v1
+https://mercury.com,mercury.com,83,nonum,Radically different banking,"Mercury will occasionally send you emails with offers, news, and promotions. Check this box if you do not want to receive them.",Open account,168,2026-07-24,static-fetch-regex-v1
+https://miro.com,miro.com,83,nonum,The collaboration layer your AI tools are missing.,"Where teams and their agents think, plan and build together",Explore research,127,2026-07-24,static-fetch-regex-v1
+https://mixpanel.com,mixpanel.com,83,nonum,"Build faster, with direction","Ground every product decision in customer truth, wherever — and however — you and your agents build.",Book a Demo,141,2026-07-24,static-fetch-regex-v1
+https://monzo.com,monzo.com,83,nonum,Monzo | Your New Favourite Bank,It all starts with our personal current account,Personal account,96,2026-07-24,static-fetch-regex-v1
+https://ngrok.com,ngrok.com,83,nonum,"Connect anything, anywhere.","ngrok is developer infrastructure that routes and secures traffic to your apps, APIs, and AI models.",Get started (for free),151,2026-07-24,static-fetch-regex-v1
+https://notion.so,notion.so,83,nonum,Where teams and agents Think together.,"Capture context, find answers, and automate tasks with AI built for your team.",Get Notion free,133,2026-07-24,static-fetch-regex-v1
+https://opera.com,opera.com,83,nonum,Your personal browser,Take the Opera browser to go,See more,59,2026-07-24,static-fetch-regex-v1
+https://pinecone.io,pinecone.io,83,nonum,Give agents knowledge,Fast retrieval. Accurate results. Lower costs. Start in seconds.,Start Building,101,2026-07-24,static-fetch-regex-v1
+https://planetscale.com,planetscale.com,83,nonum,The world’s fastest and most scalable cloud databases,"PlanetScale brings you the fastest databases available in the cloud. Both our Postgres and Vitess databases deliver exceptional speed and reliability, with Vitess adding ultra scalability through horizontal sharding.",fastest databases,288,2026-07-24,static-fetch-regex-v1
+https://plausible.io,plausible.io,83,nonum,Easy to use and privacy-friendly Google Analytics alternative,Why use Plausible Analytics?,Start free trial,107,2026-07-24,static-fetch-regex-v1
+https://posthog.com,posthog.com,83,nonum,PostHog – We make your product self-driving,"PostHog already knows your customers, which features they use, and the issues they have.",Products,141,2026-07-24,static-fetch-regex-v1
+https://proton.me,proton.me,83,nonum,A better internet starts with privacy and freedom,Take control of your data with end-to-end encryption.,Create a free account,125,2026-07-24,static-fetch-regex-v1
+https://qdrant.tech,qdrant.tech,83,nonum,High-Performance Vector Search at Scale,"Qdrant helps you build the AI retrieval you want. Ship high performance, full-feature vector search at any scale and with any deployment model.",Start Free in Qdrant Cloud,210,2026-07-24,static-fetch-regex-v1
+https://redis.io,redis.io,83,nonum,Inquiring agents want to know:,What’s your problem ?,Copy,57,2026-07-24,static-fetch-regex-v1
+https://render.com,render.com,83,nonum,Your fastest path to production for,"Choose what you need to run your apps, APIs, agent logic, databases, cron jobs, and more.",Start for free,140,2026-07-24,static-fetch-regex-v1
+https://retool.com,retool.com,83,nonum,Build anywhere. Ship in Retool.,Apps that mean business,Starter prompts,71,2026-07-24,static-fetch-regex-v1
+https://shopify.com,shopify.com,83,nonum,Be the next AI all-star,store they line up for,Start for free,61,2026-07-24,static-fetch-regex-v1
+https://stackblitz.com,stackblitz.com,83,nonum,How product & engineering teams work together with AI,"Turn text into working web apps. Bolt handles the code while you focus on your vision, letting you create and launch applications directly from your browser.",Try Bolt.new,224,2026-07-24,static-fetch-regex-v1
+https://strapi.io,strapi.io,83,nonum,Open-Source Content Framework for AI-Powered,npx create-strapi-app@latest,Create APIs,85,2026-07-24,static-fetch-regex-v1
+https://supabase.com,supabase.com,83,nonum,Build in a weekend Scale to millions,"Start your project with a Postgres database. Add Authentication, Data APIs, Edge Functions, Realtime Data, Storage, and Vector embeddings.",Start your project,194,2026-07-24,static-fetch-regex-v1
+https://superhuman.com,superhuman.com,83,nonum,"Superpowers, everywhere you work","Mail, Docs, and AI that works in every app and tab",Get Superhuman,98,2026-07-24,static-fetch-regex-v1
+https://surveymonkey.com,surveymonkey.com,83,nonum,Turn curiosity into clarity,"Run regular market research, customer satisfaction, event registration, or employee feedback programs to get helpful human answers to your big questions.",Get started free,198,2026-07-24,static-fetch-regex-v1
+https://tally.so,tally.so,83,nonum,The simplest way to create forms,"Say goodbye to boring forms. Meet Tally — the free, intuitive form builder you’ve been looking for.",Create a free form,151,2026-07-24,static-fetch-regex-v1
+https://teachable.com,teachable.com,83,nonum,The future of your educ ation business happens here,"Whatever your expertise—languages, fitness, or coding—Teachable helps you deliver impactful learning, run a smarter business, and scale worldwide.",Start for free,213,2026-07-24,static-fetch-regex-v1
+https://telegram.org,telegram.org,83,nonum,Telegram – a new era of messaging,a new era of messaging,English,64,2026-07-24,static-fetch-regex-v1
+https://trello.com,trello.com,83,nonum,"Capture, organize, and tackle your to-dos from anywhere","Capture every vital detail from emails, Slack, and more directly into your Trello Inbox.",Features,153,2026-07-24,static-fetch-regex-v1
+https://turso.tech,turso.tech,83,nonum,Turso - Databases Everywhere,Register now for early access to concurrent writes in the Turso Cloud. Join the waitlist,Join the waitlist,135,2026-07-24,static-fetch-regex-v1
+https://uber.com,uber.com,83,nonum,Go anywhere with Uber,Explore what you can do with Uber,Pickup now,66,2026-07-24,static-fetch-regex-v1
+https://vanta.com,vanta.com,83,nonum,Trust is everything,Earn and prove it with Vanta.,Risk See and manage risk in one place.,88,2026-07-24,static-fetch-regex-v1
+https://vwo.com,vwo.com,83,nonum,AI-powered autonomous digital optimization to maximize conversions,"Build AI workflows to analyze customer behavior, run experiments, and personalize real-time experiences, to drive conversions across your websites and apps.",Explore for Free,240,2026-07-24,static-fetch-regex-v1
+https://warp.dev,warp.dev,83,nonum,"From the terminal to the cloud, with any agent",Warp is an open agentic development environment born from the terminal. Build your software factory with a flexible system designed to outlast whatever comes next.,Download Warp,224,2026-07-24,static-fetch-regex-v1
+https://zed.dev,zed.dev,83,nonum,Your last next editor,Zed is a minimal code editor crafted for speed and collaboration with humans and AI.,Download now D,121,2026-07-24,static-fetch-regex-v1
+https://synthesia.io,synthesia.io,82,filler,All-in-one AI Video platform for business,Create studio-quality videos with AI avatars and voiceovers in 160+ languages. Save up to 90% of time and cost on video production.,Book demo,183,2026-07-24,static-fetch-regex-v1
+https://llamaindex.ai,llamaindex.ai,80,weakcta nonum caps,Document OCR for the agentic stack,"LlamaParse turns hours of manual document processing into seconds of automation, with VLM-powered document understanding agents.",Get started,175,2026-07-24,static-fetch-regex-v1
+https://attio.com,attio.com,79,nonum caps,Welcome to agentic revenue.,"Attio is the CRM that builds pipeline, advances deals, and grows accounts around the clock.",Talk to sales,133,2026-07-24,static-fetch-regex-v1
+https://clay.com,clay.com,79,nonum caps,Build systems to grow revenue,"Infrastructure to get any data, run agentic workflows, and launch GTM plays.",Start free trial,123,2026-07-24,static-fetch-regex-v1
+https://e2b.dev,e2b.dev,79,nonum caps,AI Sandboxes for,"Built for AI Agents , LLM Training, and MCPs",START FOR FREE,76,2026-07-24,static-fetch-regex-v1
+https://exa.ai,exa.ai,79,nonum caps,"Web search, built for AI agents","One API for search, crawling, and research agents",Try API for free,98,2026-07-24,static-fetch-regex-v1
+https://firecrawl.dev,firecrawl.dev,79,nonum caps,Power AI agents with clean web data,"The context API to search, scrape, and interact with the web at scale. It's also open source.",It's also open source.,152,2026-07-24,static-fetch-regex-v1
+https://front.com,front.com,79,nonum,AI for simple support is everywhere. Complex customer operations demand Front.,"Only Front brings teams, conversations, and AI into one coordinated system, so customer operations stay fast, accurate, and in control.",Request demo,227,2026-07-24,static-fetch-regex-v1
+https://glean.com,glean.com,79,nonum,"Glean connects knowledge, systems, and context so AI can actually work.",The world's leading enterprises put AI to work with Glean.,Get a Demo,141,2026-07-24,static-fetch-regex-v1
+https://linear.app,linear.app,79,nonum emoji,The product development system for teams and agents,Purpose-built for planning and building products. Designed for the AI era.,New Coding Sessions →,148,2026-07-24,static-fetch-regex-v1
+https://pipedrive.com,pipedrive.com,79,nonum caps,The easy and effective CRM for closing deals,"Pipedrive lets you track your sales pipeline, optimize leads, manage deals with AI and automate your entire sales process so you can focus on selling.",Try it free,207,2026-07-24,static-fetch-regex-v1
+https://prisma.io,prisma.io,79,nonum caps,Agent Infrastructure for TypeScript,"Build, deploy, and iterate end-to-end in one conversation, with ORM, Postgres, and Compute designed to work together natively.",Try Prisma,173,2026-07-24,static-fetch-regex-v1
+https://sourcegraph.com,sourcegraph.com,79,nonum emoji,Take control of your codebase,"Give humans and agents complete context to understand, oversee, and evolve the world's largest, most complex codebases.",Get a demo →,162,2026-07-24,static-fetch-regex-v1
+https://storyblok.com,storyblok.com,79,nonum,Your AI is only as good as your content. Make it joyful.,"Structure your content once. Let your team, your agents, and your workflows run wild with confidence.",Try for Free,171,2026-07-24,static-fetch-regex-v1
+https://tavily.com,tavily.com,79,nonum caps,Connect your AI agents to the web,One secure API for real-time web access.,Try it for free,90,2026-07-24,static-fetch-regex-v1
+https://duckduckgo.com,duckduckgo.com,78,nonum excl,Switch to DuckDuckGo. It’s private and free!,Add our free extension to block web trackers.,Download Browser,107,2026-07-24,static-fetch-regex-v1
+https://workos.com,workos.com,78,filler weakcta nonum,"Your app, ‍ Enterprise Ready.",Start selling to enterprise customers with just a few lines of code. Implement features like single sign-on in minutes instead of months.,Get started,179,2026-07-24,static-fetch-regex-v1
+https://adyen.com,adyen.com,77,filler nonum,Fintech you can bank on,"One platform for payments, data, and financial products. Built to scale with the world's leading businesses.",Talk to our team Talk to our team,166,2026-07-24,static-fetch-regex-v1
+https://apollo.io,apollo.io,77,filler nonum,"The AI sales platform for smarter, faster revenue growth",Sign up with Microsoft,Sign up for free,96,2026-07-24,static-fetch-regex-v1
+https://appwrite.io,appwrite.io,77,filler nonum,Build faster and scale bigger than ever _,"Appwrite is an open-source platform for building and scaling applications faster, offering Auth, Databases, Storage, Functions, Messaging, Realtime, and web hosting - all in one place.",Start project,240,2026-07-24,static-fetch-regex-v1
+https://arc.net,arc.net,77,filler nonum,Arc is the Chrome replacement I've been waiting for.,A browser that doesn’t just meet your needs — it anticipates them.,Download Arc for Windows,144,2026-07-24,static-fetch-regex-v1
+https://brave.com,brave.com,77,filler nonum,The browser that puts you first,Block ads. Save data. And get way faster webpages. Just by switching your browser.,Get Brave,124,2026-07-24,static-fetch-regex-v1
+https://browserbase.com,browserbase.com,77,nonum shorthl,Browserbase,Give your agents access to the whole web.,Browserbase,65,2026-07-24,static-fetch-regex-v1
+https://buffer.com,buffer.com,77,nonum shorthl,Buffer,Your social media workspace,Get started for free,55,2026-07-24,static-fetch-regex-v1
+https://carrd.co,carrd.co,77,nonum shorthl,Carrd,"Simple, free, fully responsive one-page sites for pretty much anything.",Choose a Starting Point,101,2026-07-24,static-fetch-regex-v1
+https://confluent.io,confluent.io,77,filler nonum,Build Faster. Scale Smarter.,"With the World's Data Streaming Platform, by the original co-creators of Apache Kafka®",Start for Free,130,2026-07-24,static-fetch-regex-v1
+https://crewai.com,crewai.com,77,filler nonum,Build. Deploy. Manage. Enterprise Agents,"The open platform that accelerates agent adoption. From discovering what to automate, to launching your first agent, to optimizing your thousandth.",Request a Demo,203,2026-07-24,static-fetch-regex-v1
+https://fastly.com,fastly.com,77,filler nonum,"Build, Secure, and Deliver. Instantly.",Fastly Edge Cloud Platform,Request a demo,80,2026-07-24,static-fetch-regex-v1
+https://fullstory.com,fullstory.com,77,filler nonum,Intelligent digital experiences. Powered by human context.,"Capture real user behavior and put it to work, so your AI moves faster, and your experience improves.",Get a demo,171,2026-07-24,static-fetch-regex-v1
+https://github.com,github.com,77,filler nonum,"Search code, repositories, users, issues, pull requests...","We read every piece of feedback, and take your input very seriously.",Search syntax tips,146,2026-07-24,static-fetch-regex-v1
+https://gitlab.com,gitlab.com,77,filler nonum,Ship faster. With trust.,Your intelligent orchestration platform for DevSecOps,Try for free,91,2026-07-24,static-fetch-regex-v1
+https://hume.ai,hume.ai,77,filler nonum,The data and evaluation layer for emotionally intelligent voice AI,"Build & measure AI the way people experience it, based on research and grounded in real human judgment",Contact Research,186,2026-07-24,static-fetch-regex-v1
+https://increase.com,increase.com,77,filler nonum,Increase — Banking for ambitious technology companies,Banking for ambitious technology companies. Build great financial products with an API-first bank.,Products,161,2026-07-24,static-fetch-regex-v1
+https://knock.app,knock.app,77,filler nonum,Agent-led customer engagement for compounding growth.,"One platform to manage all your messaging—product, marketing, and transactional. Purpose-built for control, speed, and collaboration.",Get started S,201,2026-07-24,static-fetch-regex-v1
+https://meridian-demo-flax.vercel.app,meridian-demo-flax.vercel.app,77,filler nonum,We build things worth remembering.,"Meridian is a design & engineering studio crafting identities, products and interfaces that refuse to blend in.",See what we do,161,2026-07-24,static-fetch-regex-v1
+https://monday.com,monday.com,77,filler nonum,You lead. Agents act.,Where people and agents drive results together on one secure AI work platform,Marketing,109,2026-07-24,static-fetch-regex-v1
+https://mural.co,mural.co,77,filler nonum,Sync up. Speed up. Stand out.,"You’re busier than ever. Mural is the visual AI platform that turns alignment into an ongoing way of working, connecting strategy to execution and driving results in one shared workspace.",Collaborator Notice,237,2026-07-24,static-fetch-regex-v1
+https://netlify.com,netlify.com,77,filler nonum,Push your ideas to the web,"Create with AI or code, deploy instantly on production infrastructure. One platform to build and ship.",Start building,144,2026-07-24,static-fetch-regex-v1
+https://outreach.io,outreach.io,77,filler nonum,Agentic AI Platform for Revenue Teams,You didn’t hire enough sellers. Now you don’t have to.,Explore AI Agents Explore AI Agents,128,2026-07-24,static-fetch-regex-v1
+https://postmarkapp.com,postmarkapp.com,77,filler nonum,The email delivery service that people actually like,"Stop worrying if your emails made it to the inbox, and get back to focusing on what matters—building great products.",Start free trial,186,2026-07-24,static-fetch-regex-v1
+https://railway.com,railway.com,77,filler nonum,Ship software peacefully,With the all-in-one intelligent cloud provider,intelligent,83,2026-07-24,static-fetch-regex-v1
+https://raycast.com,raycast.com,77,filler nonum,Your shortcut to everything.,"A collection of powerful productivity tools all within an extendable launcher. Fast, ergonomic and reliable.",Download for Mac,154,2026-07-24,static-fetch-regex-v1
+https://remix.run,remix.run,77,filler nonum,A web framework for building anything,"Remix gives you the power and tools to build anything you can dream of. To get started, just npx remix@next new and you're off to the races.",Watch the repo,193,2026-07-24,static-fetch-regex-v1
+https://rippling.com,rippling.com,77,filler nonum,"AI that knows your company, and acts like it","HR, IT, and Finance data all on one platform, so AI can answer questions, automate work, and help teams get more done.",Create free account,183,2026-07-24,static-fetch-regex-v1
+https://signal.org,signal.org,77,nonum shorthl,Speak Freely,Share Without Insecurity,Get Signal,48,2026-07-24,static-fetch-regex-v1
+https://statsig.com,statsig.com,77,filler nonum,Measure what ships. Ship what matters.,There's a smarter way to build great products,Create a free account,106,2026-07-24,static-fetch-regex-v1
+https://thinkific.com,thinkific.com,77,filler nonum,Powering the world’s top learning businesses,"Thinkific is an online course platform that helps you create, market, and sell learning products in one place. Build courses with a drag-and-drop editor, add communities and memberships, and accept payments instantly.",Talk to sales,276,2026-07-24,static-fetch-regex-v1
+https://trigger.dev,trigger.dev,77,filler nonum,Build and deploy fully‑managed AI agents and workflows,"Trigger.dev is the platform for building AI workflows in TypeScript. Long-running tasks with retries, queues, observability, and elastic scaling.",Start building now,219,2026-07-24,static-fetch-regex-v1
+https://typeform.com,typeform.com,77,filler nonum,"Forms & Automated Workflows, Powered by AI | Typeform","Free form, survey, and quiz templates",Platform overview What is Typeform?,127,2026-07-24,static-fetch-regex-v1
+https://unicornplatform.com,unicornplatform.com,77,filler nonum,Create a Website for Your Project Fast,"Unicorn Platform is an AI website builder that helps to quickly create websites without design or development skills for SaaS , Apps , Directories, Blogs , Personal pages , and more.",Create Your Website,241,2026-07-24,static-fetch-regex-v1
+https://vercel.com,vercel.com,77,nonum shorthl,Agentic Infrastructure,To ship apps and agents For coding agents For coding agents to ship apps and agents automated by agents.,Deploy now,138,2026-07-24,static-fetch-regex-v1
+https://zoom.us,zoom.us,77,filler nonum,Find out what's possible when work connects,Bridge the gap between talking and doing with the AI-first work platform built for you.,Explore products Explore products,165,2026-07-24,static-fetch-regex-v1
+https://fivetran.com,fivetran.com,76,hype nonum,Automated data for autonomous agents,"Securely move, manage, and transform data to power analytics, operations, and AI at scale.",Get started for free,148,2026-07-24,static-fetch-regex-v1
+https://loom.com,loom.com,76,hype nonum,One video is worth a thousand words,Easily record and share AI-powered video messages with your teammates and customers to supercharge productivity,Get Loom for free,165,2026-07-24,static-fetch-regex-v1
+https://payloadcms.com,payloadcms.com,76,hype nonum,The backend to build the modern web.,Payload is the open-source Next.js backend used in production by the most innovative companies on earth.,Get a Demo Get a Demo,163,2026-07-24,static-fetch-regex-v1
+https://plaid.com,plaid.com,76,hype nonum,Turn data into revolutionary financial products,"Connect to real-time insights on the Plaid Network to create fast, safe, and smart financial experiences.",Talk with our team,172,2026-07-24,static-fetch-regex-v1
+https://runwayml.com,runwayml.com,76,hype nonum,Building Real-World Intelligence,"Runway is building foundational Real-World Intelligence that can understand, simulate and act in the world. We offer products and services built on-top of this intelligence to empower individuals and organizations to do more in the world.",Try Runway for free,291,2026-07-24,static-fetch-regex-v1
+https://smartlead.ai,smartlead.ai,76,hype nonum,Unlock the Full Power of AI Outbound,Automate prospecting and close more deals with AI agents and a deliverability infrastructure built to land emails in the inbox.,Try Smartlead Now,182,2026-07-24,static-fetch-regex-v1
+https://anthropic.com,anthropic.com,75,weakcta nonum,AI research and products that put safety at the frontier,AI will have a vast impact on the world. Anthropic is a public benefit corporation dedicated to securing its benefits and mitigating its risks.,Learn more,211,2026-07-24,static-fetch-regex-v1
+https://astro.build,astro.build,75,weakcta nonum,The web framework for content-driven websites,"Astro powers the world's fastest marketing sites, blogs, e-commerce websites, and more.",Get Started,145,2026-07-24,static-fetch-regex-v1
+https://deno.com,deno.com,75,weakcta nonum,"Better, faster JavaScript","Deno is a fast, open-source, fully Node-compatible JS runtime with TypeScript and everything else you need baked right in.",Get started,160,2026-07-24,static-fetch-regex-v1
+https://docker.com,docker.com,75,weakcta nonum,"Accelerate agent adoption, safely.",MicroVM isolation for every agent session. Network and filesystem locked down at the runtime.,Learn more,139,2026-07-24,static-fetch-regex-v1
+https://figma.com,figma.com,75,weakcta nonum,The intelligent canvas for infinite creativity,One workspace for your entire product development process.,Get started,117,2026-07-24,static-fetch-regex-v1
+https://gong.io,gong.io,75,nonum longhl,Revenue AI Built To Close deals faster Predict pipeline risk Automate handoffs Enable at scale Increase win rates Predict churn,"Capture every interaction, analyze what's working, and automate what happens next — ring the gong, deal after deal, quarter after quarter.",See Gong in action,285,2026-07-24,static-fetch-regex-v1
+https://keystatic.com,keystatic.com,75,nonum caps,Content Management for your Codebase,"A tool that makes Markdown, JSON and YAML content in your codebase editable by humans. Live edit content on GitHub or your local file system, without disrupting your existing code and workflows.",Read the docs,245,2026-07-24,static-fetch-regex-v1
+https://lemonsqueezy.com,lemonsqueezy.com,75,weakcta nonum,"Payments, tax & subscriptions for software companies","Selling digital downloads, subscriptions, and software licenses has never been easier, faster, or more secure.",Get started,175,2026-07-24,static-fetch-regex-v1
+https://modal.com,modal.com,75,weakcta nonum,AI infrastructure that developers love,The production cloud for AI.,Get Started,79,2026-07-24,static-fetch-regex-v1
+https://neon.tech,neon.tech,75,weakcta nonum,Neon is the Postgres backend designed for apps and agents.,Postgres Database . Serverless Postgres that scales and branches with your app.,Get started,150,2026-07-24,static-fetch-regex-v1
+https://nuxt.com,nuxt.com,75,weakcta nonum,The Full-Stack Vue Framework,Chosen by leading companies worldwide,Get started,78,2026-07-24,static-fetch-regex-v1
+https://replicate.com,replicate.com,75,nonum longhl,Run and fine-tune models. Deploy custom models. All with one line of code.,A poolside patio at sunset with vintage lounge chairs .,Get started for free,151,2026-07-24,static-fetch-regex-v1
+https://resend.com,resend.com,75,weakcta nonum,Email for developers,The best way to reach humans instead of spam folders. Deliver transactional and marketing emails at scale.,Get started,139,2026-07-24,static-fetch-regex-v1
+https://sentry.io,sentry.io,75,weakcta nonum,"Code breaks, fix it faster","Application monitoring software considered ""not bad"" by millions of developers.",Get Started,118,2026-07-24,static-fetch-regex-v1
+https://slack.com,slack.com,75,weakcta nonum,All your people and AI agents working together.,Slack connects your team. Slackbot multiplies what they can do.,Get started,123,2026-07-24,static-fetch-regex-v1
+https://webflow.com,webflow.com,75,weakcta nonum,Make your website a growth engine,Build your brand. Rank in AI search. Drive real revenue. All with Webflow.,Get started,120,2026-07-24,static-fetch-regex-v1
+https://wix.com,wix.com,75,weakcta nonum,The new way to create a website,"Go from words to a business-ready site that’s entirely yours to shape, on the first hybrid website builder.",Get Started,151,2026-07-24,static-fetch-regex-v1
+https://xata.io,xata.io,75,weakcta nonum,Postgres for agentic development,"A Postgres database for every app. An isolated branch with production-like data for every pull request, preview deployment, and coding agent.",Get started,186,2026-07-24,static-fetch-regex-v1
+https://klaviyo.com,klaviyo.com,74,filler weakcta caps,the AUTONOMOUS B2C CRM,The AI marketing & service platform for ambitious consumer brands,Sign up,96,2026-07-24,static-fetch-regex-v1
+https://novu.co,novu.co,73,filler nonum caps,The communication infrastructure for agents and products,"One platform to connect your products and your agents to every channel your users live on: Inbox, Email, SMS, Push, Chat, Slack, Microsoft Teams, Telegram, and more.",START FOR FREE,237,2026-07-24,static-fetch-regex-v1
+https://usefathom.com,usefathom.com,73,filler nonum caps,A Google Analytics alternative that’s simple & privacy-first,"Ditch complex, intrusive web analytics for Fathom - a better Google Analytics alternative. Experience ease of use, forever data retention, and complete, worry-free GDPR compliance - all while protecting your time and your visitors' digital privacy .",Two database migrations and a divorce,348,2026-07-24,static-fetch-regex-v1
+https://weaviate.io,weaviate.io,73,filler nonum caps,"Design, build and ship complete AI experiences","Vector search, RAG, and memory - all in one open-source platform.",Start building,127,2026-07-24,static-fetch-regex-v1
+https://writer.com,writer.com,73,nonum shorthl caps,WRITER,AI adoption in the enterprise,Try for free,49,2026-07-24,static-fetch-regex-v1
+https://bun.sh,bun.sh,72,filler caps,Bun is a fast JavaScript all-in-one toolkit |,"Bun is a fast, incrementally adoptable all-in-one JavaScript, TypeScript & JSX toolkit. Use individual tools like bun test or bun install in Node.js projects, or adopt the complete stack with a fast JavaScript runtime, bundler, test runner , and package manager built in. Bun aims for 100% Node.js compatibility.",test runner,370,2026-07-24,static-fetch-regex-v1
+https://vivaldi.com,vivaldi.com,72,filler nonum excl,The only web browser powerful enough for you!,With all the features you need and unmatched levels of customization.,Give a donation,131,2026-07-24,static-fetch-regex-v1
+https://algolia.com,algolia.com,71,filler nonum,Agentic. Generative. Search,One AI retrieval platform to power them all,Explore the platform,92,2026-07-24,static-fetch-regex-v1
+https://buttondown.com,buttondown.com,71,filler nonum,Why is running a newsletter so hard?,Buttondown is the last email platform you'll switch to.,Join your last newsletter platform,127,2026-07-24,static-fetch-regex-v1
+https://hubspot.com,hubspot.com,71,filler nonum,Where go-to-market teams go to grow scale close retain grow,"Unite marketing, sales, and customer service on one agentic customer platform that delivers results fast.",Get a demo of HubSpot's premium software,206,2026-07-24,static-fetch-regex-v1
+https://kit.com,kit.com,71,filler nonum,Your email list should be working harder for you,"Your audience is more valuable than you think. Kit is the email marketing platform that helps you grow your list, find your highest-value subscribers, and earn more from every send.",Start free trial,247,2026-07-24,static-fetch-regex-v1
+https://sanity.io,sanity.io,71,filler nonum,The Content Operations Platform,"Power content applications and AI workflows at scale. Every application, one platform.",Start building,133,2026-07-24,static-fetch-regex-v1
+https://twilio.com,twilio.com,71,filler nonum,The platform for conversations in the AI era,"The Twilio platform empowers humans and AI agents to work together, coordinate across channels, and pick up every customer conversation where the last one left off.",Start for free,224,2026-07-24,static-fetch-regex-v1
+https://umso.com,umso.com,71,filler nonum,The Easiest Way to Build Your Website,"You don't need any experience to build a beautiful website for yourself, your small business, or anything else.",Build your website,168,2026-07-24,static-fetch-regex-v1
+https://upstash.com,upstash.com,71,filler nonum,Serverless Data Platform,One platform for all your data needs,Start for Free,76,2026-07-24,static-fetch-regex-v1
+https://unbounce.com,unbounce.com,70,hype filler nonum,Launch faster. Convert more.,"Generate more leads and sales with Unbounce, the leading landing page platform built for marketers and agencies. Leverage AI-driven insights powered by billions of conversions to deliver better results—without increasing your budget or team size.",Start building for free,299,2026-07-24,static-fetch-regex-v1
+https://checkr.com,checkr.com,69,filler weakcta nonum,Verify candidates with confidence,The AI-powered verification platform for high-stakes decisions.,Sign up,105,2026-07-24,static-fetch-regex-v1
+https://courier.com,courier.com,69,filler weakcta nonum,The customer messaging platform for humans & agents,T u r n e v e r y p r o d u c t s i g n a l i n t o t h e r i g h t m e s s a g e . O r c h e s t r a t e n o t i f i c a t i o n s a n d l i f e c y c l e j o u r n e y s a c r o s s e v e r y c h a n n e l .,Learn more,272,2026-07-24,static-fetch-regex-v1
+https://instantly.ai,instantly.ai,69,weakcta nonum shorthl,Find Clients,Get more clients by chatting to AI,Get Started,59,2026-07-24,static-fetch-regex-v1
+https://nextjs.org,nextjs.org,69,filler weakcta nonum,The React Framework for the Web,"Used by some of the world's largest companies, Next.js enables you to create high-quality web applications with the power of React components.",Get Started,186,2026-07-24,static-fetch-regex-v1
+https://svelte.dev,svelte.dev,69,weakcta nonum shorthl,Svelte,"attractively thin, graceful and stylish",get started,58,2026-07-24,static-fetch-regex-v1
+https://ticktick.com,ticktick.com,69,filler weakcta nonum,"Stay Organized, Stay Creative.",Powerful and intuitive features,Get Started,74,2026-07-24,static-fetch-regex-v1
+https://baseten.co,baseten.co,68,hype weakcta nonum,Inference is everything,"The fastest model runtimes, cross-cloud high availability, and seamless developer workflows. Powered by the Baseten Inference Stack.",Get started,168,2026-07-24,static-fetch-regex-v1
+https://hasura.io,hasura.io,68,hype nonum longhl,We’ve spent years perfecting products that make it effortless to access and use data.,Accurate AI by continuously learning the unique context of your business.,Contact Us,170,2026-07-24,static-fetch-regex-v1
+https://pulumi.com,pulumi.com,68,hype weakcta nonum,Next-level infrastructure as code for humans and agents.,Ship cloud infrastructure at the speed of AI with languages and tools that stay out of your way.,Get started,165,2026-07-24,static-fetch-regex-v1
+https://tailscale.com,tailscale.com,68,filler nonum caps,The best secure connectivity platform for the AI era,"A Zero Trust identity-based connectivity platform that replaces your legacy VPN, SASE, and PAM and connects remote teams, multi-cloud environments, CI/CD pipelines, Edge & IoT devices, and AI workloads.",Start connecting devices,280,2026-07-24,static-fetch-regex-v1
+https://airbyte.com,airbyte.com,67,nonum caps,The context layer for AI agents.,"Connect once, and your agents get pre-indexed context with real-time read/write access to your CRM, support desk, code repos, and more through our MCP, SDK, and CLI.",COPY,203,2026-07-24,static-fetch-regex-v1
+https://contentful.com,contentful.com,66,hype filler nonum caps,"Sorry, content chaos — your time’s up","Contentful DXP uses AI-driven analytics to help you personalize, optimize, and create standout digital experiences at scale. Effortlessly.",Explore Contentful Platform,204,2026-07-24,static-fetch-regex-v1
+https://apollographql.com,apollographql.com,65,filler nonum caps,"The API Orchestration Platform for AI Agents, Web, and Mobile Apps",Connect agents and apps to GraphQL and REST APIs with proven infrastructure trusted by enterprise leaders,Start for free,187,2026-07-24,static-fetch-regex-v1
+https://hotjar.com,hotjar.com,65,filler nonum,Hotjar has evolved into something more powerful,"Hotjar is now part of Contentsquare. Together, we’ve built a powerful, easy-to-use platform designed to help you to go from insight to impact, fast.",Book a demo,208,2026-07-24,static-fetch-regex-v1
+https://konghq.com,konghq.com,65,nonum shorthl caps,# AI Connectivity,"Secure, manage, speed up, monetize, and cost-control every LLM, MCP, event, and API request.",[ Book Demo ] Book Demo,134,2026-07-24,static-fetch-regex-v1
+https://flexport.com,flexport.com,64,hype filler nonum,"Your end-to-end supply chain, all in one platform","Flexport is the platform that coordinates global logistics from factory to customer door — empowering businesses to ship anywhere, sell everywhere and grow faster.",Talk to an Expert,231,2026-07-24,static-fetch-regex-v1
+https://digitalocean.com,digitalocean.com,63,filler weakcta nonum shorthl,AI-Native Cloud,"One platform, fully integrated from silicon to agent, with economics that improve as you scale.",Get Started,123,2026-07-24,static-fetch-regex-v1
+https://folk.app,folk.app,63,weakcta nonum caps,The CRM that works for your team,folk CRM captures the full context of your relationships in one beautifully simple CRM. AI Assistants learn from this data to automate busywork.,Learn more,188,2026-07-24,static-fetch-regex-v1
+https://mongodb.com,mongodb.com,63,filler weakcta nonum,One data platform. Unlimited AI potential.,"Combine operational data, vectors, and streaming data in a unified platform.",Get Started,131,2026-07-24,static-fetch-regex-v1
+https://asana.com,asana.com,62,hype filler weakcta nonum,The OS for human-agent teams,Supercharge your teams to get things done,Get started,82,2026-07-24,static-fetch-regex-v1
+https://marqeta.com,marqeta.com,62,hype filler nonum longhl,The card issuing platform built for debit credit flexible credentials prepaid what's next,"Industry leaders across buy now, pay later, on-demand delivery, expense management, retail, digital banking, and more use Marqeta to deliver exceptional debit and credit card experiences that elevate their brands and build lasting customer loyalty. See how Square uses Marqeta.",Talk to sales,381,2026-07-24,static-fetch-regex-v1
+https://segment.com,segment.com,62,filler nonum excl emoji,Segment ❤️ Twilio. We're finally moving in together on Twilio.com!,"We're merging our websites to make things simpler. You can now find our leading customer data platform—plus, everything else Twilio offers, over on Twilio.com .",Twilio.com,238,2026-07-24,static-fetch-regex-v1
+https://sendgrid.com,sendgrid.com,62,filler nonum excl emoji,SendGrid ❤️ Twilio. We're finally moving in together on Twilio.com!,"We're merging our websites to make things simpler. You can now find all our trusted email solutions, plus everything else Twilio offers, over on Twilio.com .",Twilio.com,236,2026-07-24,static-fetch-regex-v1
+https://close.com,close.com,61,filler nonum caps,"The sales CRM built for calling, emailing, texting, automation and action","Close is a sales CRM built for teams that sell. It combines calling, email, SMS, pipeline management, reporting, and an AI sales agent named Chloe into a single platform. Close helps teams act on their sales data.",Start free with Google,310,2026-07-24,static-fetch-regex-v1
+https://jotform.com,jotform.com,61,filler nonum caps,EASIEST ONLINE FORM BUILDER,Powerful forms get it done.,Sign Up with Google,75,2026-07-24,static-fetch-regex-v1
+https://stripe.com,stripe.com,61,filler weakcta nonum longhl,"Financial infrastructure to grow your revenue. Accept payments, offer financial services and implement custom revenue models – from your first transaction to your billionth.",Flexible solutions for every business model.,Get started,230,2026-07-24,static-fetch-regex-v1
+https://unit.co,unit.co,58,hype filler nonum,Elevate your platform with embedded finance.,"Launch money solutions that customers actually love. Start instantly with fully managed solutions, or build with full control.",Chat with an expert,191,2026-07-24,static-fetch-regex-v1
+https://optimizely.com,optimizely.com,57,filler nonum longhl,You're free to grow You're free to grow You're free to grow You're free to grow You're free to grow,The AI platform to create and optimize every digital experience. So the experience-makers can do the work they love.,Let's grow,227,2026-07-24,static-fetch-regex-v1
+https://beehiiv.com,beehiiv.com,51,filler nonum caps,NEWSLETTERS. PODCASTS. COMMUNITY. ONE PLATFORM.,beehiiv is the only platform that brings together every tool you need to grow and earn.,Sign up with Google,155,2026-07-24,static-fetch-regex-v1
+https://bitwarden.com,bitwarden.com,51,filler nonum caps,THE MOST TRUSTED PASSWORD MANAGER,"Bitwarden secures every password, passkey, and secret that your people, AI agents, and machines rely on. Experience the open source, end-to-end encrypted platform that scales with you.",Get Started Free,235,2026-07-24,static-fetch-regex-v1
+https://copy.ai,copy.ai,41,filler nonum shorthl caps,GTM Platform,"Infuse AI across your go-to-market engine with a single platform — not dozens of copilots and point solutions. Codify best practices, unify data, connect teams, and eliminate GTM bloat. Power all key GTM use cases and realize the full value of AI.",Get Demo,269,2026-07-24,static-fetch-regex-v1
