@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below. The corpus it produced is a separate object with its own DOI."
+title: "Landing Copy Grader: a deterministic 0-100 rubric for landing page hero copy"
+abstract: "Scores the hero copy of a landing page (headline, sub-headline, call-to-action) from 0 to 100 against a fixed rule set: no LLM, no backend, no network call, so the same input always yields the same score. It is a linter for stylistic tells, not a ground-truth AI detector, and has not been validated against human judgement."
+type: software
+authors:
+  - name: "parweb"
+version: v1.0.0
+date-released: 2026-07-25
+doi: 10.5281/zenodo.21543774
+license: MIT
+repository-code: "https://github.com/parweb/landing-copy-grader"
+keywords:
+  - copywriting
+  - landing pages
+  - marketing copy
+  - heuristic scoring
+  - AI-generated text
+references:
+  - type: data
+    title: "Landing Page Hero Copy: 239 Real Pages, Deterministically Scored"
+    authors:
+      - name: "parweb"
+    doi: 10.5281/zenodo.21543620
+    year: 2026
